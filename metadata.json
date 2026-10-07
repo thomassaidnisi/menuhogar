@@ -1,0 +1,6 @@
+{
+  "name": "Planificación de Comidas",
+  "description": "Una aplicación doméstica e inteligente para planificar las comidas de la semana, gestionar la lista de compras, coordinar el meal prep por niveles de energía y chatear con un asistente de cocina.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
