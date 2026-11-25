@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home as HomeIcon, Calendar, ShoppingBag, ChefHat, MessageSquare, Users, LayoutGrid, Coffee, Sparkles } from 'lucide-react';
+import { Home as HomeIcon, Calendar, ShoppingBag, ChefHat, MessageSquare, Users, LayoutGrid, Coffee, Sparkles, BookOpen } from 'lucide-react';
 
 interface SidebarProps {
   activeSection: string;
@@ -16,6 +16,7 @@ export default function Sidebar({ activeSection, setActiveSection, teamCount, on
     { id: 'compras', label: 'Lista de Compras', icon: ShoppingBag },
     { id: 'mealprep', label: 'Meal Prep', icon: ChefHat },
     { id: 'snacks', label: 'Desayunos y Snacks', icon: Coffee },
+    { id: 'guia', label: 'Guía', icon: BookOpen },
     { id: 'planificador', label: 'Planificador Interactivo', icon: LayoutGrid },
     { id: 'asistente', label: 'Asistente', icon: MessageSquare },
   ];

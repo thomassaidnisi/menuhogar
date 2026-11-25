@@ -1,0 +1,286 @@
+[
+ {
+  "id": "organizacion",
+  "title": "Organización y cocina",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "Comprar, cocinar y stockearse de forma organizada es la base.",
+  "items": [
+   "Hacer las compras organizadas, cocinar y stockearse de alimentos saludables es indispensable.",
+   "Los frascos de vidrio son aliados en las alacenas. Dejar los plásticos.",
+   "Identificar los frascos con cartelitos y fecha de vencimiento.",
+   "Tener varios bowls de vidrio para remojar semillas, frutos secos y legumbres. Siempre tener algo en remojo en la mesada.",
+   "Cocinar con cacerolas de cerámica, acero inoxidable o barro; utensilios de bambú, madera, silicona o vidrio.",
+   "Hacer una lista semanal de lo que falta comprar para empezar la semana con todo listo."
+  ]
+ },
+ {
+  "id": "heladera",
+  "title": "Heladera saludable",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "Una heladera lista hace que los licuados y bowls sean prácticos.",
+  "items": [
+   "Organizarla y limpiarla una vez por semana, desinfectando con alcohol o vinagre de alcohol para evitar suciedad y moho.",
+   "Tener siempre vegetales y frutas de estación.",
+   "Freezar frutas lavadas, peladas y cortadas para preparar licuados y healthy bowls más rápido.",
+   "Tener espinaca, kale y hojas verdes prelavadas en tappers de vidrio para los batidos verdes."
+  ]
+ },
+ {
+  "id": "agua",
+  "title": "Agua",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "2 a 2,5 litros por día.",
+  "items": [
+   "Tomar de 2 a 2,5 litros por día (8 a 10 vasos). Sumar 2 a 3 vasos con calor o actividad física.",
+   "Ideal: agua mineral baja en sodio. Evitar la del grifo salvo que tenga filtro.",
+   "Disminuir gaseosas y jugos concentrados o industrializados.",
+   "Para quien le cuesta tomar agua: jarra de vidrio grande con agua mineral o filtrada, frutas, vegetales y hierbas. Se aplastan con cuchara de madera, se van rellenando con agua y se aprovechan todo el día."
+  ],
+  "table": {
+   "title": "Aguas frutales: combinaciones",
+   "columns": [
+    "Combinación"
+   ],
+   "rows": [
+    [
+     "Ananá, pepino y menta"
+    ],
+    [
+     "Frutillas, pepino y menta"
+    ],
+    [
+     "Frutillas, kiwi y menta"
+    ],
+    [
+     "Sandía y albahaca"
+    ],
+    [
+     "Pomelo y menta"
+    ],
+    [
+     "Lima y albahaca"
+    ],
+    [
+     "Mango y jengibre"
+    ],
+    [
+     "Lima y kiwi"
+    ],
+    [
+     "Pepino y menta"
+    ],
+    [
+     "Mango y menta"
+    ],
+    [
+     "Frutillas y albahaca"
+    ],
+    [
+     "Limón, lima y naranja"
+    ],
+    [
+     "Frambuesas y menta"
+    ],
+    [
+     "Arándanos, limón y romero"
+    ],
+    [
+     "Pomelada: pomelos, jengibre, endulzante, hielo"
+    ],
+    [
+     "Limonada: limones, menta, endulzante, hielo"
+    ],
+    [
+     "Maracuyada: limas, pulpa de maracuyá, menta, hielo"
+    ],
+    [
+     "Pepino, lima, jengibre y menta"
+    ],
+    [
+     "Naranja, mandarina y lima"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "vegetales",
+  "title": "Vegetales y porciones",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "Dos porciones por día, una cruda y una cocida, con mucho color.",
+  "items": [
+   "Elegir vegetales de estación y variados cada día.",
+   "Ideal: 2 porciones por día. Cruda en el almuerzo, cocida o salteada en la cena.",
+   "El plato tiene que tener color: mínimo 2 colores en una ensalada, mejor 3 o 4.",
+   "Octubre y noviembre es época de espárragos.",
+   "Lavado: enjuagar con agua, dejar 20 minutos en agua con vinagre de alcohol (las hojas verdes y lo que se coma crudo) y volver a enjuagar.",
+   "Rociador casero (verificar proporciones en el original, el texto es ambiguo): agua + vinagre blanco + 2 cdas de bicarbonato + jugo de 1 limón."
+  ]
+ },
+ {
+  "id": "frutas",
+  "title": "Frutas",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "De estación, todos los días, y cuidando el índice glucémico.",
+  "items": [
+   "Consumir frutas todos los días; mejor las de estación.",
+   "Todas tienen distinto índice glucémico, lo que impacta en los picos de glucosa y en la energía.",
+   "Formas de consumirlas: licuados, batidos que mezclan frutas y vegetales, healthy bowls, helados caseros, ensaladas."
+  ]
+ },
+ {
+  "id": "proteinas",
+  "title": "Proteínas: carnes y huevos",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "Una proteína distinta cada día, magras y bien cocidas.",
+  "items": [
+   "Cada día una proteína distinta, animal o vegetal, para evitar la monotonía. Se pueden combinar en un plato.",
+   "Carne vacuna magra (lomo, cuadril, peceto): 1 a 2 veces por semana, a la plancha o al horno. Evitar fritura y carne molida.",
+   "Pescado fresco (salmón, merluza, trucha): 1 a 2 veces por semana, preferentemente al horno y con vegetales. Evitar enlatados.",
+   "Pollo sin piel, partes magras (pechuga, pata-muslo sin piel): 1 a 2 veces por semana, al horno, plancha o hervido. Milanesas: reemplazar el pan rallado por avena extrafina, trigo sarraceno o semillas molidas, y hornear.",
+   "Cerdo, conejo y otras: sacar la grasa de alrededor antes de cocinar.",
+   "Huevos: 1 a 2 unidades, pueden ser todos los días, siempre que no estén en el mismo plato con carne vacuna, pollo o cerdo. Ideal con vegetales, legumbres, quinoa o cereales sin TACC o integrales."
+  ]
+ },
+ {
+  "id": "cereales",
+  "title": "Cereales, harinas y panes",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "Integrales y sin TACC; evitar refinados e industrializados.",
+  "items": [
+   "Pastas a base de legumbres y harinas de semillas y frutos secos: almendras, lino, quinoa, trigo sarraceno, avena sin gluten.",
+   "Acompañar las pastas con vegetales crudos (hojas verdes) para una absorción más lenta, sobre todo si hay entrenamiento.",
+   "Los cereales refinados y blancos dan hidratos de rápida absorción: picos de glucosa, baja de energía y ganas de picotear.",
+   "Panes y crackers: de garbanzo, trigo sarraceno, quinoa, avena sin gluten, lino, almendra, nuez, girasol, chía o coco. Mejor caseros.",
+   "Leer las etiquetas de los panes embolsados antes de comprar.",
+   "Las mezclas de harina de arroz, mandioca y maíz tienen poca fibra y alto índice glucémico."
+  ]
+ },
+ {
+  "id": "remojo",
+  "title": "Remojo y activación",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "Remojar mejora la digestión y el aprovechamiento de nutrientes.",
+  "items": [
+   "El remojo elimina antinutrientes que interfieren en la absorción de nutrientes a nivel intestinal.",
+   "Quinoa: enjuagarla muy bien varias veces hasta que el agua salga limpia (elimina la saponina). Cocinar 15 minutos, 1 taza de quinoa por 2 de agua. Es apta para celíacos y tiene bajo índice glucémico.",
+   "Las legumbres se cocinan desde agua hirviendo, escurridas del remojo."
+  ],
+  "table": {
+   "title": "Tiempos de remojo y cocción",
+   "columns": [
+    "Alimento",
+    "Remojo",
+    "Cocción"
+   ],
+   "rows": [
+    [
+     "Garbanzos",
+     "24 hs (más es mejor)",
+     "1 hora aprox."
+    ],
+    [
+     "Lentejas",
+     "8 a 12 hs",
+     "30 min o hasta que estén blandas"
+    ],
+    [
+     "Lentejas turcas",
+     "1 hora",
+     "hasta que estén blandas"
+    ],
+    [
+     "Porotos aduki",
+     "24 hs",
+     "1 hora o hasta que estén blandos"
+    ],
+    [
+     "Almendras, nueces, castañas de cajú",
+     "8 a 12 hs; escurrir y secar con papel",
+     "lista para usar"
+    ],
+    [
+     "Semillas de lino y chía",
+     "8 hs (forman mucílago)",
+     "-"
+    ],
+    [
+     "Semillas de girasol",
+     "4 a 6 hs",
+     "-"
+    ],
+    [
+     "Sésamo blanco",
+     "2 hs",
+     "-"
+    ],
+    [
+     "Quinoa",
+     "1 hora, enjuagando hasta que salga limpia",
+     "15 min (1 taza : 2 de agua)"
+    ]
+   ]
+  }
+ },
+ {
+  "id": "lacteos",
+  "title": "Lácteos y quesos",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "Descremados, yogures naturales o griegos; quesos blandos y magros.",
+  "items": [
+   "Los lácteos complementan desayunos y meriendas, siempre descremados.",
+   "Leches alternativas: almendras, nuez, coco. Yogures descremados o griegos; si son caseros, ideales. Elegir con probióticos.",
+   "Leche de almendras casera: remojar unas 12 almendras toda la noche tapadas, tirar el agua, pelarlas y licuar con agua.",
+   "Quesos blandos o untables descremados; evitar los duros (de rallar, cáscara colorada) por grasa y sal.",
+   "Los quesos no son siempre necesarios; los más completos son los untables de semillas y frutos secos."
+  ]
+ },
+ {
+  "id": "azucar",
+  "title": "Dulces y azúcar",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "Ocasional, y leyendo etiquetas.",
+  "items": [
+   "Lo dulce y con más grasa saturada, para ocasiones especiales y no cada semana.",
+   "Cuidado con alimentos que se disfrazan de diet, light o saludables: mirar el primer, segundo y tercer ingrediente de la etiqueta.",
+   "Mejor cocinar preparaciones dulces caseras."
+  ]
+ },
+ {
+  "id": "licuados",
+  "title": "Licuados y batidos",
+  "source": "Lic. Yanina Sisterna",
+  "summary": "Conservan la fibra y generan saciedad.",
+  "items": [
+   "Se hacen en licuadora, conservan la fibra y son más espesos.",
+   "Promueven el tránsito intestinal, son prebióticos y generan saciedad.",
+   "Evitan picos de glucosa si se combinan bien las frutas y vegetales: lo ideal es que sean de índice glucémico bajo o medio.",
+   "Pueden ser una comida completa si se saben combinar.",
+   "Masticar mientras se toman.",
+   "Los bowls también se hacen en licuadora, pero son más espesos y se comen con cuchara y toppings."
+  ]
+ },
+ {
+  "id": "desayuno",
+  "title": "Desayuno rico en proteína y fibra",
+  "source": "Taller antiinflamatorio (Aran Romero)",
+  "summary": "Energía real y saciedad.",
+  "items": [
+   "Equilibra la glucosa en sangre, reduce la inflamación y mantiene el apetito bajo control durante horas.",
+   "La proteína ayuda a la regeneración celular, la masa muscular y reduce antojos.",
+   "La fibra favorece la digestión y la saciedad.",
+   "Combinar fibra, proteína y grasas saludables para un plato completo, sin procesados."
+  ]
+ },
+ {
+  "id": "navidad",
+  "title": "Fiestas sin restricción ni inflamación",
+  "source": "Taller antiinflamatorio (Aran Romero)",
+  "summary": "Equilibrar, no compensar ni castigarse.",
+  "items": [
+   "Regla del alcohol: 1 copa por 2 vasos de agua. Evitar cócteles azucarados o con jugos; mejor vino, vermut con soda y limón, etc.",
+   "Empezar por la proteína antes de las harinas y los azúcares.",
+   "Comer lento y masticar; comer con disfrute, no con culpa; respetar el propio límite.",
+   "Al día siguiente: ducha tibia al despertar, 5 a 10 minutos de sol, hidratarse con 2 litros de agua como mínimo y romper el ayuno con proteína."
+  ]
+ }
+]

@@ -5,17 +5,19 @@ export interface Recipe {
   basePortions: number;
   ingredients: {
     name: string;
-    amount: number; // base amount for 1 person (or per basePortions)
+    amount: number | null; // base amount per basePortions; null = "a gusto" (never scaled)
     unit: string;
     category: 'Verdulería' | 'Carnicería' | 'Lácteos y Huevos' | 'Almacén';
   }[];
   steps: string[];
   note?: string;
-  // Present on recipes imported by the user (via IA), absent on the fixed ebook recipes.
-  origin?: 'ebook' | 'importada';
+  // Absent on the fixed ebook recipes (treated as 'ebook'); 'nutricionista'/'taller' come from
+  // reference/nutricion/recetas_nutricion.json via nutritionData.ts.
+  origin?: 'ebook' | 'importada' | 'nutricionista' | 'taller';
   // Only meaningful for imported recipes — the ebook recipes get their meal type from their
   // fixed slot in weeklyPlans (almuerzo/cena) instead.
-  category?: 'Almuerzo' | 'Cena' | 'Desayuno' | 'Snack';
+  // 'Pan'/'Salsa' are side preparations from the nutrition recipes — not offered as planner meals.
+  category?: 'Almuerzo' | 'Cena' | 'Desayuno' | 'Snack' | 'Pan' | 'Salsa';
   // AI-estimated kcal per single portion (at basePortions), via POST /api/estimate-calories.
   // Approximate, not a precise nutritional calculation — shown only in recipe detail views.
   estimatedCalories?: number;
@@ -60,7 +62,7 @@ export interface TeamMember {
 
 export interface SnackVariant {
   name?: string;
-  ingredients: { name: string; amount: number; unit: string }[];
+  ingredients: { name: string; amount: number | null; unit: string }[]; // null = "a gusto"
   steps: string[];
 }
 
@@ -74,6 +76,7 @@ export interface SnackRecipe {
   description: string;
   prepTime: number; // in minutes
   energyLevel: 1 | 2 | 3;
+  origin?: 'ebook' | 'nutricionista' | 'taller'; // absent = ebook (Mix & Match)
   variants: SnackVariant[];
   // AI-estimated kcal per portion, computed from the first variant's ingredients. Approximate,
   // shown only in the recipe detail view — see Recipe.estimatedCalories for the same convention.

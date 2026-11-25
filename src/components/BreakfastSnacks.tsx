@@ -2,11 +2,23 @@ import React, { useState, useMemo } from 'react';
 import { Shuffle, LayoutGrid, Search, Heart, Clock, Zap, ArrowLeft, Check, RefreshCw } from 'lucide-react';
 import { SnackRecipe, SnackVariant } from '../types';
 import { breakfastSnacksRecipes } from '../breakfastSnacksData';
+import { nutritionSnackRecipes, ORIGIN_LABEL } from '../nutritionData';
+
+const allSnacks: SnackRecipe[] = [...breakfastSnacksRecipes, ...nutritionSnackRecipes];
 
 const STORAGE_KEY = 'mh_snacks_favorites';
 
 type CategoryFilter = 'Todas' | 'Desayuno' | 'Snack' | 'Favoritos';
 type FlavorFilter = 'Todas' | 'Dulce' | 'Salado';
+type OriginFilter = 'todas' | 'ebook' | 'nutricionista' | 'taller';
+
+function OriginBadge({ origin }: { origin: NonNullable<SnackRecipe['origin']> }) {
+  return (
+    <span className="text-[9px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shrink-0 text-[#2B2B28] bg-[#E8E4DC]">
+      {origin !== 'ebook' && '🌿 '}{ORIGIN_LABEL[origin]}
+    </span>
+  );
+}
 
 const ENERGY_LABEL: Record<1 | 2 | 3, string> = {
   1: 'Energía baja',
@@ -52,6 +64,7 @@ export default function BreakfastSnacks() {
   const [catalogFilter, setCatalogFilter] = useState<CategoryFilter>('Todas');
   const [flavorFilter, setFlavorFilter] = useState<FlavorFilter>('Todas');
   const [catalogSearch, setCatalogSearch] = useState('');
+  const [originFilter, setOriginFilter] = useState<OriginFilter>('todas');
 
   const toggleFavorite = (id: string) => {
     setFavorites((prev) => {
@@ -73,7 +86,7 @@ export default function BreakfastSnacks() {
   };
 
   const handleSortear = () => {
-    const pool = breakfastSnacksRecipes.filter((r) => sorteoCategory === 'Todas' || r.category === sorteoCategory);
+    const pool = allSnacks.filter((r) => sorteoCategory === 'Todas' || r.category === sorteoCategory);
     if (pool.length === 0) return;
     const recipe = pickRandom(pool);
     const variantIndex = Math.floor(Math.random() * recipe.variants.length);
@@ -82,17 +95,18 @@ export default function BreakfastSnacks() {
 
   const catalogRecipes = useMemo(() => {
     const q = catalogSearch.toLowerCase();
-    return breakfastSnacksRecipes.filter((r) => {
+    return allSnacks.filter((r) => {
       if (catalogFilter === 'Desayuno' && r.category !== 'Desayuno') return false;
       if (catalogFilter === 'Snack' && r.category !== 'Snack') return false;
       if (catalogFilter === 'Favoritos' && !favorites.includes(r.id)) return false;
       // 'mixto' recipes have at least one variant of each flavor, so they match both filters.
       if (flavorFilter === 'Dulce' && r.flavor !== 'dulce' && r.flavor !== 'mixto') return false;
       if (flavorFilter === 'Salado' && r.flavor !== 'salado' && r.flavor !== 'mixto') return false;
+      if (originFilter !== 'todas' && (r.origin ?? 'ebook') !== originFilter) return false;
       if (q && !r.name.toLowerCase().includes(q) && !r.description.toLowerCase().includes(q)) return false;
       return true;
     });
-  }, [catalogFilter, flavorFilter, catalogSearch, favorites]);
+  }, [catalogFilter, flavorFilter, originFilter, catalogSearch, favorites]);
 
   const toggleIngredient = (idx: number) => {
     setCheckedIngredients((prev) => ({ ...prev, [idx]: !prev[idx] }));
@@ -120,6 +134,9 @@ export default function BreakfastSnacks() {
                 <div className="flex items-center gap-1.5 flex-wrap">
                   <span className="text-[10px] font-bold text-[#E08A3C] bg-[#E08A3C]/15 px-2.5 py-1 rounded-full uppercase tracking-wider">
                     {activeRecipe.category}
+                  </span>
+                  <span className="text-[10px] font-bold text-white bg-white/10 px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    {activeRecipe.origin && activeRecipe.origin !== 'ebook' && '🌿 '}{ORIGIN_LABEL[activeRecipe.origin ?? 'ebook']}
                   </span>
                   {activeRecipe.flavor && (
                     <span className="text-[10px] font-bold text-white bg-white/10 px-2.5 py-1 rounded-full uppercase tracking-wider">
@@ -153,7 +170,7 @@ export default function BreakfastSnacks() {
               {activeRecipe.estimatedCalories !== undefined && (
                 <span
                   className="text-xs text-white/70 flex items-center gap-1.5"
-                  title="Estimación aproximada calculada por IA, no un dato nutricional exacto"
+                  title="Estimación aproximada, no un dato nutricional exacto"
                 >
                   🔥 ~{activeRecipe.estimatedCalories} kcal aprox.
                 </span>
@@ -208,10 +225,15 @@ export default function BreakfastSnacks() {
                       </span>
                       <span className={`text-sm text-[#2B2B28] ${checked ? 'line-through' : ''}`}>
                         <span className="font-medium">{ing.name}</span>
-                        {' '}
-                        <span className="text-xs font-bold text-[#4A7856]">
-                          ({ing.amount} {ing.unit})
-                        </span>
+                        {/* amount null = "a gusto": name only */}
+                        {ing.amount !== null && (
+                          <>
+                            {' '}
+                            <span className="text-xs font-bold text-[#4A7856]">
+                              ({ing.amount} {ing.unit})
+                            </span>
+                          </>
+                        )}
                       </span>
                     </button>
                   </li>
@@ -377,6 +399,28 @@ export default function BreakfastSnacks() {
             ))}
           </div>
 
+          {/* Origin filter — combinable with the filters above */}
+          <div className="flex items-center gap-1.5 flex-wrap">
+            {([
+              ['todas', 'Todos los orígenes'],
+              ['ebook', 'Ebook'],
+              ['nutricionista', 'Nutricionista'],
+              ['taller', 'Taller antiinflamatorio']
+            ] as const).map(([value, label]) => (
+              <button
+                key={value}
+                onClick={() => setOriginFilter(value)}
+                className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all border ${
+                  originFilter === value
+                    ? 'bg-[#E08A3C] text-white border-[#E08A3C]'
+                    : 'bg-[#FDFCFA] text-[#8A8579] border-[#E8E4DC] hover:text-[#2B2B28]'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {catalogRecipes.map((recipe) => {
               const isFav = favorites.includes(recipe.id);
@@ -392,6 +436,7 @@ export default function BreakfastSnacks() {
                         {recipe.category}
                       </span>
                       {recipe.flavor && <FlavorBadge flavor={recipe.flavor} />}
+                      {recipe.origin && recipe.origin !== 'ebook' && <OriginBadge origin={recipe.origin} />}
                     </div>
                     <Heart
                       onClick={(e) => {

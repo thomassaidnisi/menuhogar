@@ -1,0 +1,3981 @@
+[
+ {
+  "id": "nut_batido_verde_1",
+  "name": "Batido verde clásico",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 90,
+  "timeMinutes": 5,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "espinaca fresca",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "limón exprimido",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "manzana verde o roja",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "pepino pelado",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "semillas de chía activadas",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "agua",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar todo; agregar agua si hace falta.",
+   "Servir y masticar mientras se toma."
+  ],
+  "note": "Masticar mientras se toma (consejo de la nutricionista)."
+ },
+ {
+  "id": "nut_batido_verde_2",
+  "name": "Batido verde de durazno y jengibre",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "mixto",
+  "basePortions": 1,
+  "estimatedCalories": 120,
+  "timeMinutes": 5,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "espinaca fresca",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "pepino pelado",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "jengibre fresco",
+    "amount": 1,
+    "unit": "trocito"
+   },
+   {
+    "name": "manzana verde",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "durazno amarillo",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "agua o jugo de naranja exprimido",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar todo con agua o jugo de naranja si es necesario.",
+   "Servir y masticar mientras se toma."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_batido_verde_3",
+  "name": "Batido verde con avena",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "mixto",
+  "basePortions": 1,
+  "estimatedCalories": 170,
+  "timeMinutes": 5,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "espinaca fresca",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "pera o manzana roja",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "avena sin gluten activada (remojada unas horas)",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "limón exprimido",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "semillas de chía activadas",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "agua",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar todo con agua si hace falta.",
+   "Servir."
+  ],
+  "note": "Dejar la avena en remojo unas horas antes."
+ },
+ {
+  "id": "nut_batido_verde_apio",
+  "name": "Batido verde de manzana, pera y apio",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "mixto",
+  "basePortions": 1,
+  "estimatedCalories": 120,
+  "timeMinutes": 5,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "espinaca fresca bien lavada",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "manzana verde",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "pepino pelado (opcional)",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "pera",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "apio cortado",
+    "amount": 0.5,
+    "unit": "taza"
+   },
+   {
+    "name": "agua",
+    "amount": 0.5,
+    "unit": "taza"
+   }
+  ],
+  "steps": [
+   "Licuar todo.",
+   "En días de calor se puede agregar hielo."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_detox_anana_pepino_manzana",
+  "name": "Licuado detox de ananá, pepino y manzana",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "mixto",
+  "basePortions": 1,
+  "estimatedCalories": 90,
+  "timeMinutes": 5,
+  "tags": [
+   "sin TACC",
+   "índice glucémico medio/bajo"
+  ],
+  "ingredients": [
+   {
+    "name": "espinaca",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "pepino pelado",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "ananá",
+    "amount": 1,
+    "unit": "rodaja"
+   },
+   {
+    "name": "manzana verde",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "limón o lima exprimido",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "agua",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar todo con agua a gusto."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_detox_anana_limon_pepino",
+  "name": "Licuado detox de ananá, limón y pepino",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "mixto",
+  "basePortions": 1,
+  "estimatedCalories": 75,
+  "timeMinutes": 5,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "pepino pelado",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "apio",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "ananá",
+    "amount": 2,
+    "unit": "rodaja"
+   },
+   {
+    "name": "limón exprimido",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "jengibre",
+    "amount": 1,
+    "unit": "trocito"
+   },
+   {
+    "name": "agua",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar todo con agua a gusto."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_detox_anana_pomelo",
+  "name": "Licuado detox de ananá, pomelo y frutillas",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "mixto",
+  "basePortions": 1,
+  "estimatedCalories": 100,
+  "timeMinutes": 5,
+  "tags": [
+   "sin TACC",
+   "índice glucémico medio"
+  ],
+  "ingredients": [
+   {
+    "name": "ananá",
+    "amount": 2,
+    "unit": "rodaja"
+   },
+   {
+    "name": "pomelo rosa exprimido o en gajos",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "menta",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "frutillas",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "agua",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar todo con agua a gusto."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_smoothie_energetico",
+  "name": "Smoothie energético",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 320,
+  "timeMinutes": 15,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "banana congelada",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "leche descremada, de almendras o de coco",
+    "amount": 1,
+    "unit": "vaso"
+   },
+   {
+    "name": "canela",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "mantequilla de maní",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "avena instantánea remojada unas 2 horas",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "hielo (opcional)",
+    "amount": 4,
+    "unit": "cubitos"
+   }
+  ],
+  "steps": [
+   "Remojar la avena unas 2 horas.",
+   "Licuar todo y servir."
+  ],
+  "note": "Sirve de desayuno o pre-entrenamiento."
+ },
+ {
+  "id": "nut_pink_smoothie",
+  "name": "Pink smoothie",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 150,
+  "timeMinutes": 10,
+  "tags": [
+   "sin TACC",
+   "healthy",
+   "índice glucémico bajo"
+  ],
+  "ingredients": [
+   {
+    "name": "yogur descremado bebible, griego natural o de vainilla (o leche de almendras)",
+    "amount": 1,
+    "unit": "vaso"
+   },
+   {
+    "name": "arándanos",
+    "amount": 0.25,
+    "unit": "taza"
+   },
+   {
+    "name": "frutillas o frambuesas",
+    "amount": 5,
+    "unit": "u"
+   }
+  ],
+  "steps": [
+   "Licuar todo, o sin licuadora: aplastar la fruta en el fondo de un vaso y agregar el yogur."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_licuado_frutillas_pera",
+  "name": "Licuado de frutillas, pera y leche de almendras",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 130,
+  "timeMinutes": 5,
+  "tags": [
+   "sin TACC",
+   "índice glucémico medio"
+  ],
+  "ingredients": [
+   {
+    "name": "frutillas",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "pera",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "leche de almendras",
+    "amount": 1,
+    "unit": "taza"
+   }
+  ],
+  "steps": [
+   "Licuar todo."
+  ],
+  "note": "Ideal pre-entrenamiento."
+ },
+ {
+  "id": "nut_batido_naranja_antioxidante",
+  "name": "Batido naranja antioxidante",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "dulce",
+  "basePortions": 2,
+  "estimatedCalories": 110,
+  "timeMinutes": 15,
+  "tags": [
+   "healthy",
+   "índice glucémico medio"
+  ],
+  "ingredients": [
+   {
+    "name": "zanahoria pelada y rallada",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "naranja grande en jugo",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "durazno amarillo pelado",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "manzana verde",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "jengibre",
+    "amount": 1,
+    "unit": "trocito"
+   },
+   {
+    "name": "agua",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar todo; agregar agua si hace falta."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_licuado_frutillas_naranja_manzana",
+  "name": "Licuado de frutillas, naranja y manzana",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 230,
+  "timeMinutes": 5,
+  "tags": [
+   "merienda"
+  ],
+  "ingredients": [
+   {
+    "name": "frutillas cortadas y lavadas",
+    "amount": 0.5,
+    "unit": "taza"
+   },
+   {
+    "name": "naranja",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "manzana roja",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "leche de almendras o yogur descremado",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "semillas de chía activadas",
+    "amount": 1,
+    "unit": "cdita"
+   }
+  ],
+  "steps": [
+   "Licuar y servir; masticar mientras se toma."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_licuado_arandanos_banana",
+  "name": "Licuado de arándanos, banana y manzana",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 220,
+  "timeMinutes": 5,
+  "tags": [
+   "merienda"
+  ],
+  "ingredients": [
+   {
+    "name": "arándanos",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "banana congelada",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "manzana roja",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "frutillas",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "leche de almendras, de coco o yogur griego",
+    "amount": 0.5,
+    "unit": "taza"
+   }
+  ],
+  "steps": [
+   "Licuar y servir; masticar mientras se toma."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_licuado_pera_frambuesa",
+  "name": "Licuado de pera, frambuesas y nueces",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 330,
+  "timeMinutes": 5,
+  "tags": [
+   "merienda"
+  ],
+  "ingredients": [
+   {
+    "name": "pera",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "frambuesas congeladas",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "yogur de coco o griego natural",
+    "amount": 0.5,
+    "unit": "taza"
+   },
+   {
+    "name": "nueces activadas picadas",
+    "amount": 3,
+    "unit": "u"
+   }
+  ],
+  "steps": [
+   "Licuar y servir; masticar mientras se toma."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_chia_pudding",
+  "name": "Chía pudding con arándanos",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 250,
+  "timeMinutes": 10,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "leche de almendras casera (o yogur descremado)",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "semillas de chía",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "yogur natural o griego",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "arándanos enteros",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "manzana roja cortada",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "nueces activadas o semillas de girasol activadas",
+    "amount": 2,
+    "unit": "u"
+   }
+  ],
+  "steps": [
+   "En un vaso con tapa mezclar la chía con la leche o el yogur y dejar toda la noche en la heladera.",
+   "Al día siguiente sumar arándanos, manzana y nueces o semillas."
+  ],
+  "note": "Dejar reposar toda la noche."
+ },
+ {
+  "id": "nut_bowl_frutillas_almendras",
+  "name": "Healthy bowl de frutillas y almendras",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 380,
+  "timeMinutes": 10,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "frutillas lavadas, cortadas y congeladas",
+    "amount": 0.5,
+    "unit": "taza"
+   },
+   {
+    "name": "yogur griego",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "semillas de girasol activadas",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "nibs de cacao",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "banana en rodajas",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "almendras activadas cortadas",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "chocolate 80% en trocitos",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar las frutillas con el yogur y las semillas hasta que quede espeso.",
+   "Servir en un bowl con los toppings."
+  ],
+  "note": "Los bowls son más espesos que un licuado: se comen con cuchara."
+ },
+ {
+  "id": "nut_bowl_azulado_granola",
+  "name": "Healthy bowl azulado con granola",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 330,
+  "timeMinutes": 10,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "arándanos",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "leche de almendras o yogur natural",
+    "amount": 0.5,
+    "unit": "taza"
+   },
+   {
+    "name": "granola casera o natural",
+    "amount": 0.25,
+    "unit": "taza"
+   },
+   {
+    "name": "frutos rojos",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "escamas de coco",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "arándanos enteros",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "nueces activadas",
+    "amount": 2,
+    "unit": "u"
+   }
+  ],
+  "steps": [
+   "Licuar los arándanos con la leche o el yogur.",
+   "Servir en un bowl con los toppings."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_pancakes_avena",
+  "name": "Pancakes de avena sin gluten",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "mixto",
+  "basePortions": 1,
+  "estimatedCalories": 300,
+  "timeMinutes": 15,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "avena sin gluten",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "huevo",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "claras",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "polvo de hornear",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "semillas de chía",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "stevia",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "extracto de vainilla",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "aceite de coco",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "toppings: frutas, yogur natural, coco rallado, semillas, nueces",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar la avena hasta obtener harina; agregar el resto y licuar de nuevo.",
+   "Dejar reposar 5 minutos.",
+   "Calentar una sartén con aceite, bajar a fuego medio-bajo y cocinar porciones hasta que aparezcan burbujas; dar vuelta.",
+   "Servir con los toppings elegidos."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_pan_nube",
+  "name": "Pan nube especiado",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "salado",
+  "basePortions": 2,
+  "estimatedCalories": 130,
+  "timeMinutes": 45,
+  "tags": [
+   "sin TACC",
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "huevos",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "yogur griego natural",
+    "amount": 3,
+    "unit": "cda"
+   },
+   {
+    "name": "polvo de hornear",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "especias opcionales (provenzal, comino, orégano, ajo en polvo)",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "pimienta",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "sal",
+    "amount": 1,
+    "unit": "pizca"
+   }
+  ],
+  "steps": [
+   "Separar yemas y claras; batir las claras a nieve con una pizca de sal.",
+   "Mezclar las yemas con el yogur, el polvo de hornear, pimienta y especias.",
+   "Incorporar las yemas a las claras con movimientos envolventes.",
+   "Formar círculos de 8-10 cm sobre una placa aceitada.",
+   "Hornear a 180 °C de 10 a 15 minutos, hasta dorar."
+  ],
+  "note": "Salen muy inflados y bajan al rato. Acompañar con salmón o pechuga, queso untable, rúcula y rabanitos (opcional)."
+ },
+ {
+  "id": "nut_omelette_brocoli",
+  "name": "Omelette de brócoli y espinaca",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 250,
+  "timeMinutes": 15,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "huevos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "arbolitos de brócoli hervidos 3 minutos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "espinaca levemente cocida o cruda",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "ricota magra",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "semillas de girasol activadas",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "aceite de oliva",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "sal y pimienta",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Picar el brócoli y la espinaca y mezclarlos con la ricota; salpimentar.",
+   "Batir los huevos, cocinar en sartén antiadherente revolviendo hasta que cuajen apenas.",
+   "Agregar el relleno, doblar y cocinar unos minutos.",
+   "Servir con aceite de oliva y semillas."
+  ],
+  "note": "Alternativa: con champiñones y tomates frescos."
+ },
+ {
+  "id": "nut_toston_palta",
+  "name": "Tostón de pan semillado con palta y huevo",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 380,
+  "timeMinutes": 10,
+  "tags": [],
+  "ingredients": [
+   {
+    "name": "pan integral semillado casero (o pan de avena sin gluten)",
+    "amount": 1,
+    "unit": "rebanada"
+   },
+   {
+    "name": "palta pisada con gotas de limón",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "huevo",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "hojas de espinaca",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "tomate en rodajas",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "aceite de oliva",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Tostar el pan y untar la palta pisada con limón.",
+   "Agregar espinacas, tomate y el huevo.",
+   "Terminar con aceite de oliva."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_pan_semillas",
+  "name": "Pan multisemillas",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "pan",
+  "flavor": "salado",
+  "basePortions": 6,
+  "estimatedCalories": 700,
+  "timeMinutes": 180,
+  "tags": [
+   "vegano",
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "castañas de cajú",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "almendras",
+    "amount": 160,
+    "unit": "g"
+   },
+   {
+    "name": "trigo sarraceno crudo",
+    "amount": 170,
+    "unit": "g"
+   },
+   {
+    "name": "semillas de zapallo o girasol",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "semillas de chía",
+    "amount": 45,
+    "unit": "g"
+   },
+   {
+    "name": "harina de garbanzos o de avena integral fina",
+    "amount": 180,
+    "unit": "g"
+   },
+   {
+    "name": "semillas de lino molido",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "azúcar mascabo o miel",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "aceite de coco",
+    "amount": 65,
+    "unit": "g"
+   },
+   {
+    "name": "agua",
+    "amount": 650,
+    "unit": "ml"
+   },
+   {
+    "name": "sal",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Procesar apenas las castañas, almendras y trigo sarraceno: que quede con textura, no polvo.",
+   "Pasar a un bowl de vidrio y sumar semillas, harina de garbanzos, sal, azúcar, aceite de coco y agua; mezclar bien.",
+   "Engrasar un molde de budín de 21x10x7 cm con aceite de coco, volcar la masa y agregar semillas extras por encima.",
+   "Tapar con un repasador y dejar reposar 2 horas.",
+   "Hornear a 180 °C por 40 minutos, desmoldar y volver al horno hasta que dore."
+  ],
+  "note": "Para tener a mano. Rinde 6 porciones según la receta; las calorías por porción son una estimación gruesa."
+ },
+ {
+  "id": "nut_pan_avena_express",
+  "name": "Pan exprés sin gluten",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "pan",
+  "flavor": "salado",
+  "basePortions": 6,
+  "estimatedCalories": 90,
+  "timeMinutes": 35,
+  "tags": [
+   "vegano",
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "avena extrafina sin gluten",
+    "amount": 9,
+    "unit": "cda"
+   },
+   {
+    "name": "polvo de hornear sin gluten",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "aceite de oliva",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "orégano",
+    "amount": 2,
+    "unit": "cdita"
+   },
+   {
+    "name": "sal",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "agua",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Procesar la avena y pasar 9 cucharadas a un bowl.",
+   "Agregar polvo de hornear, orégano, sal, aceite de oliva y agua necesaria.",
+   "Amasar hasta una masa homogénea, que no quede chiclosa.",
+   "Hornear a 180 °C unos 25 minutos; desmoldar y volver al horno hasta dorar."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_wraps_sarraceno",
+  "name": "Wraps de trigo sarraceno",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "pan",
+  "flavor": "salado",
+  "basePortions": 7,
+  "estimatedCalories": 330,
+  "timeMinutes": 40,
+  "tags": [
+   "vegano",
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "harina de trigo sarraceno o integral fina",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "name": "semillas (opcional)",
+    "amount": 3,
+    "unit": "cda"
+   },
+   {
+    "name": "sal marina",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "levadura fresca",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "agua tibia",
+    "amount": 325,
+    "unit": "ml"
+   },
+   {
+    "name": "aceite de oliva extra virgen",
+    "amount": 5,
+    "unit": "cda"
+   }
+  ],
+  "steps": [
+   "Hacer una corona con la harina y las semillas, sal en el borde; en el hueco poner la levadura y sumar de a poco el agua tibia y el aceite.",
+   "Amasar hasta lograr una masa lisa, cubrir con un repasador y dejar leudar 30 minutos.",
+   "Armar bollitos de 100 g y estirar bien finitos (1 mm).",
+   "Cocinar vuelta y vuelta en sartén sin grasa; envolver en un repasador a medida que salen.",
+   "Rellenar con pollo, tomate, lechuga, palta o lo que guste."
+  ],
+  "note": "Se pueden freezar o guardar en la heladera con separadores. Rinde 6-8 wraps."
+ },
+ {
+  "id": "nut_masa_tarta_sarraceno",
+  "name": "Masa integral de trigo sarraceno para tarta",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "pan",
+  "flavor": "salado",
+  "basePortions": 8,
+  "estimatedCalories": 275,
+  "timeMinutes": 45,
+  "tags": [
+   "vegano",
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "harina de trigo sarraceno o integral súper fina",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "name": "aceite de oliva",
+    "amount": 80,
+    "unit": "ml"
+   },
+   {
+    "name": "mix de semillas peladas activadas (girasol, lino, sésamo) opcional",
+    "amount": 5,
+    "unit": "cda"
+   },
+   {
+    "name": "agua",
+    "amount": 180,
+    "unit": "ml"
+   },
+   {
+    "name": "sal",
+    "amount": 10,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   "Mezclar todo y amasar de 5 a 10 minutos hasta masa lisa.",
+   "Estirar entre dos films hasta 4 mm.",
+   "Llevar a la heladera 30 minutos y usar."
+  ],
+  "note": "Rinde 2 tapas. La masa estirada se puede freezar hasta 3 meses."
+ },
+ {
+  "id": "nut_ensalada_variete",
+  "name": "Ensalada Varieté",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "almuerzo",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 600,
+  "timeMinutes": 20,
+  "tags": [],
+  "ingredients": [
+   {
+    "name": "lentejas o garbanzos cocidos",
+    "amount": 1,
+    "unit": "porción"
+   },
+   {
+    "name": "brócoli",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "huevo",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "zanahorias salteadas",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "palta",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "tomates cherry",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "pepino en lámina",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "limón, aceite de oliva y sal",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Armar la ensalada con todos los ingredientes.",
+   "Condimentar con limón, aceite de oliva y sal."
+  ],
+  "note": "El pepino se puede reemplazar por daditos de calabaza horneada."
+ },
+ {
+  "id": "nut_ensalada_happy",
+  "name": "Ensalada Happy",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "almuerzo",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 650,
+  "timeMinutes": 20,
+  "tags": [],
+  "ingredients": [
+   {
+    "name": "quinoa, arroz integral o pastas integrales",
+    "amount": 1,
+    "unit": "porción"
+   },
+   {
+    "name": "cúrcuma",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "pimienta",
+    "amount": 1,
+    "unit": "pizca"
+   },
+   {
+    "name": "hojas verdes",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "tomates",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "calabaza horneada",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "palta",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "huevo a la plancha",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "aceite de oliva y limón",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Condimentar el cereal cocido con cúrcuma y pimienta.",
+   "Sumar las hojas verdes, el tomate, la calabaza, la palta y el huevo.",
+   "Condimentar con aceite de oliva y limón."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_ensalada_abrilina",
+  "name": "Ensalada Abrilina con bife de lomo",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "almuerzo",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 380,
+  "timeMinutes": 20,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "bife de lomo",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "orégano o especias",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "sal",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "espinacas frescas",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "pepino",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "cebolla de verdeo",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "tomates frescos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "aceite de oliva",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Cocinar el bife a la plancha con orégano y sal.",
+   "Armar la ensalada con espinaca, pepino, cebolla de verdeo y tomate.",
+   "Servir el bife encima con aceite de oliva."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_ensalada_huevo_palta_merluza",
+  "name": "Ensalada de huevo y palta con merluza al limón",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "almuerzo",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 560,
+  "timeMinutes": 25,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "palta",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "tomates cherry",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "huevo cocido",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "pepino",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "cebolla morada y repollo picados",
+    "amount": 0.25,
+    "unit": "taza"
+   },
+   {
+    "name": "jugo de limón",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "semillas de girasol activadas",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "sal y aceite de oliva",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "merluza",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "tomillo",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "hojas verdes y zanahoria rallada",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Cortar la palta, los tomates cherry y la cebolla; mezclar con el huevo cocido, el repollo y el pepino.",
+   "Agregar el jugo de limón, sal y aceite de oliva; terminar con semillas.",
+   "Cocinar la merluza a la plancha (o al horno) especiada con limón y tomillo.",
+   "Servir con una ensalada de tomates, hojas verdes y zanahoria rallada."
+  ],
+  "note": ""
+ },
+ {
+  "id": "nut_salmon_esparragos",
+  "name": "Salmón a la plancha con espárragos",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "cena",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 420,
+  "timeMinutes": 20,
+  "tags": [
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "salmón",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "jugo de limón y de naranja",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "finas hierbas (tomillo)",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "espárragos",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "aceite de oliva",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Cocinar el salmón a la plancha especiado con jugo de limón, naranja y tomillo.",
+   "Saltear los espárragos y servir juntos con aceite de oliva."
+  ],
+  "note": "Octubre y noviembre son época de espárragos."
+ },
+ {
+  "id": "nut_falafel_dip_zanahoria",
+  "name": "Falafel al horno con dip de zanahoria",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "almuerzo",
+  "flavor": "salado",
+  "basePortions": 6,
+  "estimatedCalories": 330,
+  "timeMinutes": 60,
+  "tags": [
+   "vegano"
+  ],
+  "ingredients": [
+   {
+    "name": "garbanzos crudos (remojados 24 hs)",
+    "amount": 500,
+    "unit": "g"
+   },
+   {
+    "name": "agua para el remojo",
+    "amount": 2,
+    "unit": "l"
+   },
+   {
+    "name": "cebolla blanca",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "ajo (opcional)",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "perejil fresco",
+    "amount": 3,
+    "unit": "cda"
+   },
+   {
+    "name": "cilantro picado",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "menta fresca picada",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "pimentón",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "coriandro",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "comino molido",
+    "amount": 2,
+    "unit": "cdita"
+   },
+   {
+    "name": "polvo de hornear",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "pimienta",
+    "amount": 0.5,
+    "unit": "cdita"
+   },
+   {
+    "name": "sal",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "zanahorias grandes ralladas (dip)",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "aceite de oliva y sal (dip)",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "hojas verdes",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Remojar los garbanzos 12 a 24 hs; escurrir y secar bien.",
+   "Procesar con el resto de los ingredientes hasta textura granulosa y algo pegajosa; heladera 1 hora.",
+   "Armar los falafel (bolitas o chatos), acomodar en placa con aceite de oliva y hornear a 180 °C por 20 minutos.",
+   "Dip: procesar la zanahoria rallada con sal y aceite hasta una pasta suave.",
+   "Servir con hojas verdes."
+  ],
+  "note": "Rinde 18 falafel chicos (3 por porción). Se pueden freezar crudos."
+ },
+ {
+  "id": "nut_risotto_calabaza_pollo",
+  "name": "Risotto de calabaza, cebolla y pollo",
+  "origin": "nutricionista",
+  "section": "comidas",
+  "category": "almuerzo",
+  "flavor": "salado",
+  "basePortions": 3,
+  "estimatedCalories": 500,
+  "timeMinutes": 60,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "pechugas de pollo",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "calabaza en cubitos",
+    "amount": 3,
+    "unit": "rodaja"
+   },
+   {
+    "name": "cebollas medianas en cubitos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "arroz integral",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "orégano",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "aceite de oliva",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "sal",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "ciboulette o perejil",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "agua",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Cocinar las pechugas a la plancha unos 20 minutos.",
+   "En una olla grande rehogar las cebollas con agua y sal; a los 10 minutos sumar la calabaza.",
+   "Agregar el pollo ya cocido y orégano.",
+   "A la media hora sumar el arroz integral y cocinar unos 35 minutos más, agregando agua de a poco.",
+   "Revolver y aplastar la calabaza para que quede cremoso; servir con aceite de oliva y ciboulette."
+  ],
+  "note": "Se puede hacer en cantidad y freezar en tapper de vidrio."
+ },
+ {
+  "id": "nut_granola_casera",
+  "name": "Super granola casera",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 9,
+  "estimatedCalories": 440,
+  "timeMinutes": 60,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "avena arrollada",
+    "amount": 75,
+    "unit": "g"
+   },
+   {
+    "name": "semillas de zapallo",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "semillas de chía activadas",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "semillas de girasol",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "sal marina",
+    "amount": 1,
+    "unit": "pizca"
+   },
+   {
+    "name": "extracto de vainilla",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "miel",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "aceite de coco neutro",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "almendras activadas y picadas",
+    "amount": 90,
+    "unit": "g"
+   },
+   {
+    "name": "nueces activadas y picadas",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "castañas de cajú",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "coco rallado",
+    "amount": 35,
+    "unit": "g"
+   },
+   {
+    "name": "arándanos (o pasas)",
+    "amount": 60,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   "Mezclar avena, semillas, sal, vainilla, la mitad de la miel y el aceite de coco.",
+   "Hornear sobre papel manteca a 180 °C hasta dorar suavemente, mezclando cada tanto.",
+   "Tostar los frutos secos por separado en sartén.",
+   "Mezclar todo, sumar el coco, los arándanos y el resto de la miel.",
+   "Guardar en frasco de vidrio hermético."
+  ],
+  "note": "Dura hasta 20 días. Rinde 8 a 10 porciones."
+ },
+ {
+  "id": "nut_granola_gluten_free",
+  "name": "Granola gluten free",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 8,
+  "estimatedCalories": 300,
+  "timeMinutes": 60,
+  "tags": [
+   "sin TACC",
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "semillas de chía",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "manzana rallada",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "avena sin gluten o galletas de arroz",
+    "amount": 110,
+    "unit": "g"
+   },
+   {
+    "name": "aceite de coco neutro",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "miel",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "canela",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "extracto de vainilla",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "sal marina",
+    "amount": 1,
+    "unit": "pizca"
+   },
+   {
+    "name": "semillas de sésamo",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "semillas de girasol",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "semillas de zapallo",
+    "amount": 30,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   "Mezclar la chía con la manzana y dejar 15 minutos para que se active.",
+   "Sumar la avena (o las galletas de arroz rotas) y el resto de los ingredientes.",
+   "Hornear sobre papel manteca a 180 °C por 20-25 minutos, mezclando cada tanto; apagar y dejar enfriar en el horno.",
+   "Guardar en frasco de vidrio hermético."
+  ],
+  "note": "Consumir en una semana: se humedece rápido. Los opcionales (pasas, nueces, dátiles, coco) se agregan una vez fría para que no se quemen."
+ },
+ {
+  "id": "nut_tartufini_coco",
+  "name": "Tartufini al cocco (trufas de coco y chocolate)",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 6,
+  "estimatedCalories": 85,
+  "timeMinutes": 20,
+  "tags": [
+   "healthy",
+   "sin TACC"
+  ],
+  "ingredients": [
+   {
+    "name": "banana",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "coco rallado",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "name": "cacao amargo puro",
+    "amount": 10,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   "Integrar los ingredientes con las manos y formar bolitas.",
+   "Pasarlas por coco rallado y algunas por cacao amargo."
+  ],
+  "note": "Se guardan en tapper de vidrio en la heladera."
+ },
+ {
+  "id": "nut_energy_balls_mani",
+  "name": "Energy balls de mantequilla de maní y chips de chocolate",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 9,
+  "estimatedCalories": 130,
+  "timeMinutes": 30,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "avena instantánea",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "miel natural",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "mantequilla de maní natural",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "name": "chips de chocolate",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "extracto de vainilla",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "coco rallado o polvo de pistachos para rebozar",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Procesar todo menos los chips hasta lograr una mezcla espesa que se pueda trabajar.",
+   "Agregar los chips al final.",
+   "Armar bolitas y rebozarlas con coco o polvo de pistachos."
+  ],
+  "note": "Duran 5 días en la heladera en tapper de vidrio."
+ },
+ {
+  "id": "nut_trufas_naranja_chocolate",
+  "name": "Trufas de naranja y chocolate",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 9,
+  "estimatedCalories": 85,
+  "timeMinutes": 30,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "avena instantánea",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "ralladura de naranja",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "semillas de chía",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "cacao amargo en polvo",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "name": "dátiles medjool descarozados e hidratados",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "agua",
+    "amount": 3,
+    "unit": "cda"
+   },
+   {
+    "name": "coco rallado o sésamo blanco para rebozar",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Procesar todo hasta una mezcla espesa que no se desarme.",
+   "Armar bolitas y pasarlas por coco o sésamo."
+  ],
+  "note": "Humedecer con agua o jugo de naranja ayuda a que se adhiera el topping. Duran 5 días en la heladera."
+ },
+ {
+  "id": "nut_trufas_coco_canela",
+  "name": "Trufas de coco y canela",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 9,
+  "estimatedCalories": 100,
+  "timeMinutes": 30,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "avena instantánea",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "coco rallado",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "name": "canela",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "dátiles medjool descarozados e hidratados",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "nueces",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "agua",
+    "amount": 3,
+    "unit": "cda"
+   }
+  ],
+  "steps": [
+   "Procesar todo hasta una mezcla espesa que no se desarme.",
+   "Armar bolitas y rebozarlas con coco, canela o cacao en polvo."
+  ],
+  "note": "Duran 5 días en la heladera."
+ },
+ {
+  "id": "nut_porridge_duraznos",
+  "name": "Porridge de avena y canela con duraznos caramelizados",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "dulce",
+  "basePortions": 4,
+  "estimatedCalories": 190,
+  "timeMinutes": 40,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "avena instantánea",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "leche descremada o de almendras",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "agua",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "canela en rama",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "durazno (o manzana o pera)",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "azúcar mascabo",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "aceite de coco neutro",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "endulzante a gusto",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "nueces y castañas activadas picadas (opcional)",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "coco rallado",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Llevar a ebullición la leche, el agua y la canela; agregar la avena y cocinar a fuego lento-medio hasta que espese.",
+   "Retirar y endulzar a gusto.",
+   "Dorar los gajos de durazno en aceite de coco, espolvorear con mascabo y cocinar 2 minutos más hasta caramelizar.",
+   "Servir la avena con el durazno, frutos secos, coco o canela."
+  ],
+  "note": "Se puede hacer con manzanas o peras horneadas, arándanos o frutillas."
+ },
+ {
+  "id": "nut_cookies_avena_manzana",
+  "name": "Cookies de avena, manzana y pasas",
+  "origin": "nutricionista",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 7,
+  "estimatedCalories": 170,
+  "timeMinutes": 45,
+  "tags": [
+   "healthy"
+  ],
+  "ingredients": [
+   {
+    "name": "huevo",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "stevia o edulcorante en polvo",
+    "amount": 75,
+    "unit": "g"
+   },
+   {
+    "name": "canela",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "manzana roja rallada",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "avena arrollada",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "harina de avena",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "name": "polvo de hornear",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "bicarbonato de sodio",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "sal marina",
+    "amount": 1,
+    "unit": "pizca"
+   },
+   {
+    "name": "pasas de uva o arándanos",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "name": "nueces picadas",
+    "amount": 50,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   "Precalentar el horno a 180 °C.",
+   "Mezclar el huevo con el endulzante, la canela y la manzana rallada.",
+   "Sumar los secos y por último las pasas y las nueces.",
+   "Armar las cookies con la mano sobre una placa con papel manteca.",
+   "Hornear de 15 a 20 minutos hasta dorar."
+  ],
+  "note": "Duran hasta 7 días en frasco de vidrio. Con azúcar mascabo en lugar de stevia usar 120 g."
+ },
+ {
+  "id": "tal_tarta_vegetales",
+  "name": "Tarta de vegetales (masa de almendra)",
+  "origin": "taller",
+  "section": "comidas",
+  "category": "almuerzo",
+  "flavor": "salado",
+  "basePortions": 6,
+  "estimatedCalories": 190,
+  "timeMinutes": 40,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "harina de almendra",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "harina de coco",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "psyllium molido",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "goma xántica",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "huevos (masa)",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "ghee pomada",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "agua",
+    "amount": 0.25,
+    "unit": "taza"
+   },
+   {
+    "name": "sal",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "vegetales a elección (relleno)",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "huevo (relleno)",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "queso rallado para gratinar",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Mezclar los secos, sumar los húmedos y dejar reposar 5 minutos.",
+   "Con las manos húmedas amasar hasta que no tenga grietas y extender en el molde.",
+   "Precocinar 10 minutos a 180 °C.",
+   "Saltear los vegetales (para que no humedezcan la tarta), mezclarlos con 1 huevo y volcar sobre la masa; queso rallado por encima.",
+   "Hornear 10 minutos a 180 °C."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_pan_almendra_psyllium",
+  "name": "Pan de harina de almendra y psyllium",
+  "origin": "taller",
+  "section": "comidas",
+  "category": "pan",
+  "flavor": "salado",
+  "basePortions": 2,
+  "estimatedCalories": 180,
+  "timeMinutes": 15,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "huevos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "harina de almendra",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "psyllium molido",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "sal y orégano",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Mezclar bien hasta formar una crema y dejar reposar 5 minutos.",
+   "Humedecer las manos y amasar (el agua forma una película gelificante que vuelve la masa flexible).",
+   "Cocinar en sartén u horno."
+  ],
+  "note": "Relleno sugerido: huevo, tomate y espinaca."
+ },
+ {
+  "id": "tal_empanadas_almendra",
+  "name": "Empanadas (masa de almendra)",
+  "origin": "taller",
+  "section": "comidas",
+  "category": "almuerzo",
+  "flavor": "salado",
+  "basePortions": 4,
+  "estimatedCalories": 180,
+  "timeMinutes": 30,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "harina de almendras",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "huevo",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "psyllium",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "ghee pomada",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "sal",
+    "amount": 0.5,
+    "unit": "cdita"
+   },
+   {
+    "name": "agua tibia (si hace falta)",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Mezclar todo y dejar reposar 5-10 minutos para que el psyllium se hidrate.",
+   "La masa tiene que quedar húmeda y moldeable; manipular con las manos húmedas.",
+   "Estirar entre dos films, rellenar a gusto con vegetales o proteína y cerrar."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_pan_molde_girasol",
+  "name": "Pan de molde de harina de girasol",
+  "origin": "taller",
+  "section": "comidas",
+  "category": "pan",
+  "flavor": "salado",
+  "basePortions": 10,
+  "estimatedCalories": 160,
+  "timeMinutes": 55,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "harina de girasol",
+    "amount": 190,
+    "unit": "g"
+   },
+   {
+    "name": "huevos",
+    "amount": 8,
+    "unit": "u"
+   },
+   {
+    "name": "ghee pomada",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "sal",
+    "amount": 0.5,
+    "unit": "cdita"
+   },
+   {
+    "name": "especias",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Precalentar el horno a 180 °C.",
+   "Mezclar los secos; batir los huevos e incorporar el ghee.",
+   "Unir ambas mezclas, dejar reposar 5 minutos y colocar en un molde.",
+   "Hornear de 35 a 45 minutos a 180 °C."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_pan_almendra_huevo",
+  "name": "Pan de almendra (8 huevos)",
+  "origin": "taller",
+  "section": "comidas",
+  "category": "pan",
+  "flavor": "salado",
+  "basePortions": 10,
+  "estimatedCalories": 150,
+  "timeMinutes": 55,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "harina de almendras",
+    "amount": 170,
+    "unit": "g"
+   },
+   {
+    "name": "huevos",
+    "amount": 8,
+    "unit": "u"
+   },
+   {
+    "name": "psyllium molido",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "ghee pomada",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "sal",
+    "amount": 0.5,
+    "unit": "cdita"
+   }
+  ],
+  "steps": [
+   "Precalentar el horno a 180 °C.",
+   "Mezclar los secos; batir los huevos e incorporar el ghee.",
+   "Unir ambas mezclas, dejar reposar 5 minutos y colocar en un molde.",
+   "Hornear de 35 a 45 minutos a 180 °C."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_tortillita_espinaca",
+  "name": "Tortillita de espinaca",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 270,
+  "timeMinutes": 20,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "huevos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "harina de almendras",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "espinaca cruda",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "manteca o ghee",
+    "amount": 1,
+    "unit": "cdita"
+   }
+  ],
+  "steps": [
+   "Licuar los huevos con la harina y la espinaca cruda; sacar la espuma o dejar reposar que baje.",
+   "Calentar el sartén con manteca o ghee y volcar una porción, esparciendo para una tortillita delgada.",
+   "Cocinar a fuego bajo hasta que esté bien cocida abajo y dar vuelta.",
+   "Dejar reposar 5 minutos para que sea más flexible."
+  ],
+  "note": "Rellenar con vegetales y proteína: champiñones, tomate y pollo, o espinaca extra y queso."
+ },
+ {
+  "id": "tal_chipa_saludable",
+  "name": "Chipá o pan de queso saludable",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "salado",
+  "basePortions": 10,
+  "estimatedCalories": 90,
+  "timeMinutes": 35,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "huevos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "harina de almendra",
+    "amount": 0.25,
+    "unit": "taza"
+   },
+   {
+    "name": "harina de coco",
+    "amount": 0.33,
+    "unit": "taza"
+   },
+   {
+    "name": "queso rallado",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "sal, orégano y pizca de polvo de hornear",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "agua",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Mezclar todo y agregar agua de a cucharadas hasta hidratar bien; dejar reposar 10 minutos (la harina de coco absorbe mucho).",
+   "Mezclar de forma consistente para que no se quiebren y armar bollitos.",
+   "Cocinar 20 minutos a 180 °C en moldecitos de cupcake, o en sartén con manteca."
+  ],
+  "note": "Acompañar con huevo revuelto con espinaca y pimienta."
+ },
+ {
+  "id": "tal_pan_coco_lino",
+  "name": "Pan de harina de coco y lino",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 200,
+  "timeMinutes": 20,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "huevos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "harina de coco",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "harina de lino o psyllium",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "sal y orégano",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "semillas de girasol o sésamo para decorar",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Mezclar hasta formar una crema; se puede cocinar en microondas.",
+   "Para sartén: dejar reposar 10 minutos, armar el bollito y decorar con semillas.",
+   "Cocinar con tapa, a fuego bajo, por ambos lados."
+  ],
+  "note": "Relleno sugerido: jamón crudo, rúcula, tomate y queso."
+ },
+ {
+  "id": "tal_panqueque_almendra_banana",
+  "name": "Panqueque de almendra y banana",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "dulce",
+  "basePortions": 2,
+  "estimatedCalories": 190,
+  "timeMinutes": 15,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "banana pisada (no muy madura)",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "huevos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "harina de almendras",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "harina de lino o psyllium",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "canela (opcional)",
+    "amount": 1,
+    "unit": "pizca"
+   },
+   {
+    "name": "aceite de oliva o manteca",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Mezclar todo hasta una mezcla homogénea.",
+   "Cocinar a fuego bajo en sartén con aceite o manteca, bien por abajo antes de dar vuelta."
+  ],
+  "note": "También se puede hornear como cupcake. Acompañar con frutillas o arándanos."
+ },
+ {
+  "id": "tal_mermelada_arandanos",
+  "name": "Mermelada de arándanos",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 20,
+  "estimatedCalories": 15,
+  "timeMinutes": 20,
+  "tags": [
+   "sin azúcar",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "arándanos (o frutilla o frutos rojos)",
+    "amount": 2,
+    "unit": "bandeja"
+   },
+   {
+    "name": "psyllium o semillas de chía",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "jugo de limón",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "stevia natural líquida o endulzante",
+    "amount": 1,
+    "unit": "cda"
+   }
+  ],
+  "steps": [
+   "Cocinar los arándanos a fuego bajo hasta que se ablanden y pisarlos.",
+   "Agregar el limón y el endulzante y reducir hasta consistencia de mermelada.",
+   "Apagar, pasar a un recipiente y agregar el psyllium o la chía; mezclar y tapar.",
+   "Refrigerar de 8 a 12 horas antes de consumir."
+  ],
+  "note": "Se conserva hasta 7 días en la heladera. Ideal con panqueques, pancitos dulces o tortitas."
+ },
+ {
+  "id": "tal_brownie",
+  "name": "Brownie para porcionar",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 9,
+  "estimatedCalories": 80,
+  "timeMinutes": 90,
+  "tags": [
+   "sin gluten",
+   "sin azúcar",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "bananas maduras",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "huevos grandes",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "harina de almendras",
+    "amount": 0.25,
+    "unit": "taza"
+   },
+   {
+    "name": "cacao amargo sin azúcar",
+    "amount": 3,
+    "unit": "cda"
+   },
+   {
+    "name": "nueces trituradas (opcional)",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "manteca o ghee para engrasar",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "harina de coco para enharinar el molde",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Pisar las bananas hasta que queden líquidas; agregar huevos, harina de almendras y cacao; mezclar bien.",
+   "Engrasar una bandeja con manteca o ghee y enharinar con harina de coco.",
+   "Verter la mezcla, agregar nueces por encima y hornear a 180 °C por 40 minutos.",
+   "Dejar reposar al menos 45 minutos antes de porcionar."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_pan_platano",
+  "name": "Pan de plátano para rebanar (plátano verde, no banana)",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "salado",
+  "basePortions": 8,
+  "estimatedCalories": 100,
+  "timeMinutes": 55,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "plátanos verdes",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "huevos",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "aceite de oliva",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "harina de lino",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "sal",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "polvo de hornear",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "harina de coco para enharinar la fuente",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar los plátanos con huevos, aceite, lino, sal y polvo de hornear.",
+   "Engrasar la fuente con aceite y enharinar con harina de coco.",
+   "Verter y hornear a 180 °C por 40 minutos; enfriar y cortar en rebanadas."
+  ],
+  "note": "Comer 2 rebanadas en el desayuno y freezar el resto. Ideal con huevo, palta o mermelada saludable."
+ },
+ {
+  "id": "tal_budin_banana_arandanos",
+  "name": "Budín de banana y arándanos",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 6,
+  "estimatedCalories": 240,
+  "timeMinutes": 45,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "bananas bien maduras (pisadas, no licuar)",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "huevos",
+    "amount": 4,
+    "unit": "u"
+   },
+   {
+    "name": "harina de almendras",
+    "amount": 1.25,
+    "unit": "taza"
+   },
+   {
+    "name": "lino molido",
+    "amount": 0.25,
+    "unit": "taza"
+   },
+   {
+    "name": "canela",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "esencia de vainilla",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "arándanos enteros (opcional)",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "manteca y harina de coco para el molde",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Pisar las bananas hasta que queden líquidas; agregar huevos, harina de almendras, lino, canela y vainilla.",
+   "Agregar los arándanos suavemente.",
+   "Engrasar una budinera con manteca y harina de coco; verter la mezcla.",
+   "Hornear a 180 °C por 30 minutos y dejar enfriar antes de cortar en 6 porciones."
+  ],
+  "note": "Se puede hacer en cupcakes. Una porción por día con 2 huevos revueltos con queso: desayuno o merienda completo y saciante."
+ },
+ {
+  "id": "tal_postre_coco_arandanos",
+  "name": "Postre de coco y arándanos",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 175,
+  "timeMinutes": 5,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "huevo entero",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "clara",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "harina de coco",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "arándanos",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "eritritol",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "psyllium",
+    "amount": 1,
+    "unit": "cdita"
+   }
+  ],
+  "steps": [
+   "Batir todo, poner en un molde pequeño y cocinar en microondas 2-3 minutos."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_postre_ricota_limon",
+  "name": "Postre de ricota y limón",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 1,
+  "estimatedCalories": 295,
+  "timeMinutes": 25,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "huevo entero",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "clara",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "ricota magra",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "name": "jugo de limón y ralladura",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "eritritol",
+    "amount": 3,
+    "unit": "cda"
+   },
+   {
+    "name": "harina de almendra",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "psyllium",
+    "amount": 1,
+    "unit": "cdita"
+   }
+  ],
+  "steps": [
+   "Batir todo junto y cocinar en un molde pequeño: horno a 170 °C por 20 minutos o microondas 3-4 minutos."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_budincito_coco_ricota",
+  "name": "Budincito de coco con ricota o yogur",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 6,
+  "estimatedCalories": 135,
+  "timeMinutes": 50,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "huevos",
+    "amount": 4,
+    "unit": "u"
+   },
+   {
+    "name": "ricota firme o yogur natural espeso sin azúcar",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "coco rallado",
+    "amount": 0.5,
+    "unit": "taza"
+   },
+   {
+    "name": "harina de coco",
+    "amount": 0.25,
+    "unit": "taza"
+   },
+   {
+    "name": "eritritol",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "polvo de hornear",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "psyllium",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "esencia de vainilla o canela (opcional)",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Mezclar todos los ingredientes en un bowl.",
+   "Verter en moldes de silicona tipo cupcake o budinera chica (12 a 14 cm) engrasados.",
+   "Hornear a 180 °C de 30 a 40 minutos; decorar con coco rallado."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_budin_banana_coco_ricota",
+  "name": "Budín de banana, coco y ricota",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 6,
+  "estimatedCalories": 140,
+  "timeMinutes": 55,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "bananas maduras",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "huevos",
+    "amount": 4,
+    "unit": "u"
+   },
+   {
+    "name": "coco rallado",
+    "amount": 0.5,
+    "unit": "taza"
+   },
+   {
+    "name": "ricota firme o yogur griego sin azúcar",
+    "amount": 0.5,
+    "unit": "taza"
+   },
+   {
+    "name": "polvo de hornear",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "psyllium",
+    "amount": 3,
+    "unit": "cdita"
+   },
+   {
+    "name": "eritritol",
+    "amount": 2,
+    "unit": "cda"
+   }
+  ],
+  "steps": [
+   "Pisar las bananas y agregar los huevos; mezclar bien.",
+   "Sumar ricota, coco, eritritol, polvo de hornear y psyllium; integrar.",
+   "Verter en moldes de silicona engrasados y hornear 40 minutos a 180 °C."
+  ],
+  "note": "Espolvorear coco rallado encima para más crocancia."
+ },
+ {
+  "id": "tal_budincito_ricota_huevo_coco",
+  "name": "Budincito de ricota, huevo y coco",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 2,
+  "estimatedCalories": 190,
+  "timeMinutes": 25,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "huevos enteros",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "ricota magra",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "coco rallado",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "name": "canela y vainilla",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "stevia (opcional)",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Batir todo hasta integrar, volcar en molde de silicona.",
+   "Hornear a 170 °C por 20 minutos o microondas 3 minutos."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_jugo_verde",
+  "name": "Jugo verde (rompe ayuno)",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "bebida",
+  "flavor": "salado",
+  "basePortions": 1,
+  "estimatedCalories": 35,
+  "timeMinutes": 5,
+  "tags": [
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "pepino",
+    "amount": 0.25,
+    "unit": "u"
+   },
+   {
+    "name": "tallo de apio sin hojas",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "jengibre",
+    "amount": 1,
+    "unit": "trocito"
+   },
+   {
+    "name": "hojas grandes de espinaca",
+    "amount": 4,
+    "unit": "u"
+   },
+   {
+    "name": "jugo de limón",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "agua",
+    "amount": 1,
+    "unit": "vaso"
+   },
+   {
+    "name": "lino molido (opcional)",
+    "amount": 1,
+    "unit": "cdita"
+   }
+  ],
+  "steps": [
+   "Licuar todo hasta integrar; tomar tal cual o colar para una textura más liviana."
+  ],
+  "note": "Ideal por la mañana en ayunas."
+ },
+ {
+  "id": "tal_cheese_omelette",
+  "name": "Desayuno exprés: cheese omelette",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "desayuno",
+  "flavor": "salado",
+  "basePortions": 2,
+  "estimatedCalories": 230,
+  "timeMinutes": 15,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "rebanadas de queso (las necesarias para cubrir el sartén)",
+    "amount": 4,
+    "unit": "u"
+   },
+   {
+    "name": "huevos",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "espinaca fresca picada",
+    "amount": 1,
+    "unit": "puñado"
+   },
+   {
+    "name": "sal y pimienta",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "En un sartén antiadherente caliente cubrir la base con las rebanadas de queso.",
+   "Batir los huevos y verterlos sobre el queso; agregar la espinaca picada.",
+   "Doblar como omelette, tapar y cocinar a fuego bajo hasta que esté firme."
+  ],
+  "note": "Acompañar con una fruta."
+ },
+ {
+  "id": "tal_pan_dulce_panettone",
+  "name": "Pan dulce (panettone) saludable",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 4,
+  "estimatedCalories": 160,
+  "timeMinutes": 45,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio",
+   "navidad"
+  ],
+  "ingredients": [
+   {
+    "name": "huevos",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "harina de almendra colmadas",
+    "amount": 4,
+    "unit": "cda"
+   },
+   {
+    "name": "harina de coco",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "ghee o manteca pomada",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "ralladura de naranja",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "jugo de naranja natural",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "agua de azahar",
+    "amount": 1.5,
+    "unit": "cdita"
+   },
+   {
+    "name": "esencia de vainilla",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "goma xántica",
+    "amount": 0.25,
+    "unit": "cdita"
+   },
+   {
+    "name": "stevia o eritritol",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "sal",
+    "amount": 1,
+    "unit": "pizca"
+   },
+   {
+    "name": "nueces, almendras o chocolate 80-85% (opcional)",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Batir los huevos con el endulzante 2-3 minutos hasta que espumen.",
+   "Agregar ralladura, jugo de naranja, agua de azahar y vainilla; luego el ghee derretido.",
+   "Añadir harina de almendra, harina de coco, sal y goma xántica; mezclar solo hasta integrar (masa cremosa y aireada).",
+   "Sumar nueces o chocolate, verter en un molde de pan dulce de 250 g hasta ¾ de su altura.",
+   "Hornear a 180 °C de 20 a 30 minutos; reposar 10 minutos antes de desmoldar."
+  ],
+  "note": "Receta de la edición navideña."
+ },
+ {
+  "id": "tal_turron_saludable",
+  "name": "Turrón saludable",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "dulce",
+  "basePortions": 10,
+  "estimatedCalories": 100,
+  "timeMinutes": 30,
+  "tags": [
+   "navidad"
+  ],
+  "ingredients": [
+   {
+    "name": "chocolate 80% cacao",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "yogur natural sin azúcar bien espeso",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "name": "mantequilla de almendra",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "frutos secos picados",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "coco rallado o harina de coco",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "eritritol (opcional)",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Derretir el chocolate a baño maría o en microondas (intervalos de 20 s) y extender una capa pareja en una bandeja forrada.",
+   "Mezclar el yogur con la mantequilla de almendra, los frutos secos y el coco; volcar sobre el chocolate y alisar.",
+   "Congelar al menos 2 horas, desmoldar, cortar en porciones y conservar en el freezer."
+  ],
+  "note": "Más firme: harina de coco. Más cremoso: coco rallado. Capa doble para un turrón relleno."
+ },
+ {
+  "id": "tal_crackers_curcuma",
+  "name": "Crackers de cúrcuma para picada",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "snack",
+  "flavor": "salado",
+  "basePortions": 10,
+  "estimatedCalories": 135,
+  "timeMinutes": 30,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "harina de almendras",
+    "amount": 175,
+    "unit": "g"
+   },
+   {
+    "name": "harina de girasol (semillas de girasol molidas)",
+    "amount": 45,
+    "unit": "g"
+   },
+   {
+    "name": "levadura",
+    "amount": 7,
+    "unit": "g"
+   },
+   {
+    "name": "polvo de hornear",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "name": "cúrcuma",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "name": "pimienta (activa la cúrcuma)",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "sal",
+    "amount": 0.5,
+    "unit": "cdita"
+   },
+   {
+    "name": "huevo",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "clara",
+    "amount": 1,
+    "unit": "u"
+   },
+   {
+    "name": "agua",
+    "amount": 30,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   "Mezclar todos los secos y agregar el huevo, la clara y el agua.",
+   "Extender la masa con rodillo sobre una plancha antiadherente, humedeciendo con agua.",
+   "Marcar con cuchillo y hornear 7 minutos a 160-170 °C; sacar y volver 3 minutos más.",
+   "Secar en horno suave hasta que estén crocantes; guardar en frasco de vidrio."
+  ],
+  "note": ""
+ },
+ {
+  "id": "tal_budin_naranja",
+  "name": "Budín de naranja",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 8,
+  "estimatedCalories": 190,
+  "timeMinutes": 60,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio",
+   "navidad"
+  ],
+  "ingredients": [
+   {
+    "name": "harina de almendras",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "harina de coco",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "name": "huevos",
+    "amount": 4,
+    "unit": "u"
+   },
+   {
+    "name": "manteca ghee derretida",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "name": "xilitol o eritritol",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "goma xántica",
+    "amount": 1.5,
+    "unit": "g"
+   },
+   {
+    "name": "extracto de vainilla",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "name": "polvo de hornear",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "ralladura de naranja",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "name": "jugo de naranja",
+    "amount": 20,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   "Preparar una budinera con papel manteca.",
+   "Unir las harinas, el polvo de hornear y la goma xántica.",
+   "Batir las claras a nieve y agregar el endulzante para hacer un merengue.",
+   "Incorporar el ghee, las yemas, la vainilla y la ralladura.",
+   "Agregar de a poco las harinas intercalando con el jugo de naranja.",
+   "Hornear a 180 °C por 45 minutos."
+  ],
+  "note": "En el recetario de desayunos figura una versión con 6 huevos y 60 g de ghee; acá se usa la de la edición navideña."
+ },
+ {
+  "id": "tal_budin_ingles",
+  "name": "Budín tipo inglés",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 6,
+  "estimatedCalories": 120,
+  "timeMinutes": 40,
+  "tags": [
+   "sin gluten",
+   "navidad"
+  ],
+  "ingredients": [
+   {
+    "name": "yogur natural",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "name": "extracto de vainilla",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "huevos",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "eritritol",
+    "amount": 4,
+    "unit": "cda"
+   },
+   {
+    "name": "ralladura de naranja, jengibre y canela (opcionales)",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "harina de almendra",
+    "amount": 4,
+    "unit": "cda"
+   },
+   {
+    "name": "goma xántica",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "frutos secos y pasas",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Batir los huevos con el yogur, la vainilla y el endulzante.",
+   "Agregar las harinas, la goma xántica y las especias hasta masa homogénea.",
+   "Incorporar los frutos secos y las pasas, verter en una budinera chica engrasada.",
+   "Hornear a 170 °C por 25-30 minutos (al pinchar sale limpio); enfriar antes de desmoldar."
+  ],
+  "note": "Más húmedo: yogur espeso. Más liviano: mitad yogur, mitad ricota. Decorar con almendras y manzana en rodajas finas."
+ },
+ {
+  "id": "tal_budin_manzana",
+  "name": "Budín de manzana",
+  "origin": "taller",
+  "section": "desayunos_snacks",
+  "category": "merienda",
+  "flavor": "dulce",
+  "basePortions": 8,
+  "estimatedCalories": 210,
+  "timeMinutes": 50,
+  "tags": [
+   "sin gluten",
+   "navidad"
+  ],
+  "ingredients": [
+   {
+    "name": "manzanas rojas medianas ralladas",
+    "amount": 2,
+    "unit": "u"
+   },
+   {
+    "name": "huevos",
+    "amount": 4,
+    "unit": "u"
+   },
+   {
+    "name": "harina de almendra",
+    "amount": 1,
+    "unit": "taza"
+   },
+   {
+    "name": "harina de coco o coco rallado",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "nueces picadas (se pueden combinar con almendras y castañas)",
+    "amount": 0.5,
+    "unit": "taza"
+   },
+   {
+    "name": "pasas o dátiles picados (opcional)",
+    "amount": 0.25,
+    "unit": "taza"
+   },
+   {
+    "name": "ghee o manteca pomada",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "canela en polvo",
+    "amount": 1,
+    "unit": "cdita"
+   },
+   {
+    "name": "eritritol o xilitol",
+    "amount": 2,
+    "unit": "cda"
+   },
+   {
+    "name": "sal",
+    "amount": 1,
+    "unit": "pizca"
+   }
+  ],
+  "steps": [
+   "Precalentar el horno a 180 °C y engrasar un molde chico (18 cm).",
+   "Batir los huevos con el endulzante hasta que espumen.",
+   "Agregar el ghee derretido, las manzanas ralladas, las harinas y las especias.",
+   "Incorporar los frutos secos y las pasas o dátiles.",
+   "Verter y hornear de 30 a 35 minutos; enfriar del todo antes de desmoldar."
+  ],
+  "note": "Más húmedo: manzanas con su jugo. Más firme: escurrirlas un poco."
+ },
+ {
+  "id": "tal_picada_saludable",
+  "name": "Picada saludable",
+  "origin": "taller",
+  "section": "comidas",
+  "category": "cena",
+  "flavor": "salado",
+  "basePortions": 6,
+  "estimatedCalories": 550,
+  "timeMinutes": 15,
+  "tags": [
+   "navidad"
+  ],
+  "ingredients": [
+   {
+    "name": "quesos duros a elección",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "queso azul",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "nueces",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "almendras",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "uvas verdes",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "manzana verde en plumas",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "tomates cherry",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "bastones de zanahoria",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "aceitunas",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "crackers de cúrcuma",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "jamón crudo",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "bondiola",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "lomo de cerdo en finas hierbas",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Armar la tabla combinando proteínas, frutos secos, fruta y vegetales crudos."
+  ],
+  "note": "Empezar por la proteína antes que por harinas y azúcares."
+ },
+ {
+  "id": "tal_mayonesa_palta",
+  "name": "Mayonesa de palta",
+  "origin": "taller",
+  "section": "comidas",
+  "category": "salsa",
+  "flavor": "salado",
+  "basePortions": 12,
+  "estimatedCalories": 70,
+  "timeMinutes": 10,
+  "tags": [
+   "sin gluten",
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "paltas hass",
+    "amount": 3,
+    "unit": "u"
+   },
+   {
+    "name": "aceite de oliva extra virgen",
+    "amount": 1,
+    "unit": "cda"
+   },
+   {
+    "name": "jugo de limón",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "comino (opcional)",
+    "amount": 1,
+    "unit": "pizca"
+   },
+   {
+    "name": "sal marina",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "perejil",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Licuar las paltas con hojitas de perejil hasta consistencia de mayonesa.",
+   "Agregar aceite de oliva y limón; condimentar con sal, pimienta y comino.",
+   "Mezclar hasta lograr una crema homogénea."
+  ],
+  "note": "Si la palta no está muy madura, sumar 1 cda de yogur natural. Una porción son 2 cucharadas."
+ },
+ {
+  "id": "tal_mayonesa_yogur_curcuma",
+  "name": "Mayonesa de yogur y cúrcuma",
+  "origin": "taller",
+  "section": "comidas",
+  "category": "salsa",
+  "flavor": "salado",
+  "basePortions": 4,
+  "estimatedCalories": 65,
+  "timeMinutes": 10,
+  "tags": [
+   "antiinflamatorio"
+  ],
+  "ingredients": [
+   {
+    "name": "yogur natural sin azúcar",
+    "amount": 1,
+    "unit": "pote"
+   },
+   {
+    "name": "aceite de oliva o ghee derretido",
+    "amount": 1.5,
+    "unit": "cda"
+   },
+   {
+    "name": "cúrcuma",
+    "amount": 0.5,
+    "unit": "cdita"
+   },
+   {
+    "name": "pimienta negra (activa la cúrcuma)",
+    "amount": 1,
+    "unit": "pizca"
+   },
+   {
+    "name": "jugo de limón",
+    "amount": 0.5,
+    "unit": "u"
+   },
+   {
+    "name": "sal",
+    "amount": null,
+    "unit": "a gusto"
+   },
+   {
+    "name": "ajo en polvo (opcional)",
+    "amount": null,
+    "unit": "a gusto"
+   }
+  ],
+  "steps": [
+   "Mezclar el yogur con el aceite o ghee hasta que quede cremoso.",
+   "Agregar cúrcuma, pimienta y sal; sumar el limón y mezclar.",
+   "Ajustar sal o limón y reposar 15-30 minutos en la heladera."
+  ],
+  "note": ""
+ }
+]

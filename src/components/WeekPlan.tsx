@@ -3,6 +3,7 @@ import { Search, Clock, Users, X, ArrowLeft, Check, ChevronDown, Utensils, Spark
 import { WeekPlan as WeekPlanType, Recipe, TeamMember, DayMenu } from '../types';
 import { weeklyPlans } from '../recipesData';
 import { loadCustomRecipes } from '../customRecipesData';
+import { nutritionMealRecipes, ORIGIN_LABEL } from '../nutritionData';
 import AssigneeSelector from './AssigneeSelector';
 
 interface WeekPlanProps {
@@ -35,8 +36,8 @@ export default function WeekPlan({
   // Recetario completo (all 4 weeks) — its own search + optional week chip filter
   const [recipeSearchQuery, setRecipeSearchQuery] = useState('');
   const [recipeWeekFilter, setRecipeWeekFilter] = useState<number | null>(null);
-  // 'todas' shows ebook + imported recipes together, 'mias' shows only the user's imported recipes
-  const [recipeSourceFilter, setRecipeSourceFilter] = useState<'todas' | 'mias'>('todas');
+  // 'todas' shows every source; the rest filter by Recipe.origin (absent = ebook, 'mias' = importada)
+  const [recipeSourceFilter, setRecipeSourceFilter] = useState<'todas' | 'ebook' | 'nutricionista' | 'taller' | 'mias'>('todas');
   const [customRecipes] = useState<Recipe[]>(() => loadCustomRecipes());
 
   // Highlight today's column in the calendar (only meaningful Mon-Fri)
@@ -82,7 +83,21 @@ export default function WeekPlan({
     label: `Importada${recipe.category ? ' · ' + recipe.category : ''}`
   }));
 
-  const recetarioEntries = [...allWeekRecipes, ...customEntries];
+  // Recetas de la nutricionista / taller (sección "comidas"): fijas, no ligadas a una semana
+  const nutritionEntries = nutritionMealRecipes.map((recipe) => ({
+    key: `nut_${recipe.id}`,
+    week: 0,
+    day: '',
+    mealType: 'almuerzo' as const,
+    recipe,
+    isCustom: false as const,
+    label: `${ORIGIN_LABEL[recipe.origin!]}${recipe.category ? ' · ' + recipe.category : ''}`
+  }));
+
+  const recetarioEntries = [...allWeekRecipes, ...nutritionEntries, ...customEntries];
+  const entryOrigin = (entry: (typeof recetarioEntries)[number]) =>
+    entry.isCustom ? 'mias' : entry.recipe.origin ?? 'ebook';
+  const showWeekChips = recipeSourceFilter === 'todas' || recipeSourceFilter === 'ebook';
 
   const [selectedRecipeWeek, setSelectedRecipeWeek] = useState<number>(currentWeek);
   const [selectedRecipeIsCustom, setSelectedRecipeIsCustom] = useState(false);
@@ -101,7 +116,7 @@ export default function WeekPlan({
     setSelectedDayMealKey(entry.key);
     setSelectedRecipeWeek(entry.week);
     setSelectedRecipeIsCustom(entry.isCustom);
-    setSelectedRecipeLabel(entry.isCustom ? (entry.recipe.category ? `Importada · ${entry.recipe.category}` : 'Importada') : `Semana ${entry.week}`);
+    setSelectedRecipeLabel(entry.week ? `Semana ${entry.week}` : entry.label);
   };
 
   const handleCloseRecipe = () => {
@@ -246,25 +261,26 @@ export default function WeekPlan({
           )}
         </div>
 
-        {/* Todas / Mis recetas */}
-        <div className="flex bg-[#FDFCFA] p-1 rounded-full border border-[#E8E4DC] self-start w-fit">
-          <button
-            onClick={() => setRecipeSourceFilter('todas')}
-            className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
-              recipeSourceFilter === 'todas' ? 'bg-[#4A7856] text-white' : 'text-[#8A8579] hover:text-[#2B2B28]'
-            }`}
-          >
-            Todas
-          </button>
-          <button
-            id="recetario-filter-mias"
-            onClick={() => setRecipeSourceFilter('mias')}
-            className={`px-4 py-2 rounded-full text-sm font-semibold transition-all ${
-              recipeSourceFilter === 'mias' ? 'bg-[#4A7856] text-white' : 'text-[#8A8579] hover:text-[#2B2B28]'
-            }`}
-          >
-            Mis recetas ({customRecipes.length})
-          </button>
+        {/* Filtro por origen */}
+        <div className="flex bg-[#FDFCFA] p-1 rounded-full border border-[#E8E4DC] self-start w-fit max-w-full overflow-x-auto">
+          {([
+            ['todas', 'Todas'],
+            ['ebook', 'Ebook'],
+            ['nutricionista', 'Nutricionista'],
+            ['taller', 'Taller antiinflamatorio'],
+            ['mias', `Mis recetas (${customRecipes.length})`]
+          ] as const).map(([value, label]) => (
+            <button
+              key={value}
+              id={`recetario-filter-${value}`}
+              onClick={() => setRecipeSourceFilter(value)}
+              className={`px-4 py-2 rounded-full text-sm font-semibold transition-all whitespace-nowrap ${
+                recipeSourceFilter === value ? 'bg-[#4A7856] text-white' : 'text-[#8A8579] hover:text-[#2B2B28]'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
         </div>
 
         {/* Recetario search bar (independent from the calendar's search) */}
@@ -289,8 +305,8 @@ export default function WeekPlan({
             )}
           </div>
 
-          {/* Optional secondary week chips - not a required filter, hidden while viewing "Mis recetas" */}
-          {recipeSourceFilter === 'todas' && (
+          {/* Optional secondary week chips - only meaningful for ebook recipes */}
+          {showWeekChips && (
             <div className="flex items-center gap-1.5 flex-wrap">
               <button
                 onClick={() => setRecipeWeekFilter(null)}
@@ -322,8 +338,8 @@ export default function WeekPlan({
         {/* Collapsed recipe summary cards, expand on click */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           {recetarioEntries
-            .filter((entry) => (recipeSourceFilter === 'mias' ? entry.isCustom : true))
-            .filter((entry) => recipeSourceFilter === 'mias' || recipeWeekFilter === null || entry.week === recipeWeekFilter)
+            .filter((entry) => recipeSourceFilter === 'todas' || entryOrigin(entry) === recipeSourceFilter)
+            .filter((entry) => !showWeekChips || recipeWeekFilter === null || entry.week === recipeWeekFilter)
             .filter((entry) => matchesRecipeSearch(entry.recipe))
             .map((entry) => (
               <button
@@ -336,7 +352,7 @@ export default function WeekPlan({
                     <span className={`text-[9px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider shrink-0 ${
                       entry.isCustom ? 'text-[#E08A3C] bg-[#E08A3C]/10' : 'text-[#4A7856] bg-[#4A7856]/10'
                     }`}>
-                      {entry.isCustom ? <>✨ {entry.label}</> : entry.label}
+                      {entry.isCustom ? <>✨ {entry.label}</> : entry.week ? <>Ebook · {entry.label}</> : <>🌿 {entry.label}</>}
                     </span>
                   </div>
                   <h5 className="font-serif font-bold text-sm text-[#2B2B28] tracking-tight truncate">
@@ -407,7 +423,7 @@ export default function WeekPlan({
                       Listo en {selectedRecipe.prepTime} minutos
                     </span>
                     {selectedRecipe.estimatedCalories !== undefined && (
-                      <span className="text-xs text-[#8A8579] flex items-center gap-1" title="Estimación aproximada calculada por IA, no un dato nutricional exacto — escala junto con las porciones elegidas">
+                      <span className="text-xs text-[#8A8579] flex items-center gap-1" title="Estimación aproximada, no un dato nutricional exacto — escala junto con las porciones elegidas">
                         🔥 ~{Math.round((selectedRecipe.estimatedCalories * portionsCount) / (selectedRecipe.basePortions || 1))} kcal aprox.
                       </span>
                     )}
@@ -482,14 +498,16 @@ export default function WeekPlan({
                       // Ebook recipes all have basePortions 1, so this divide was previously a no-op for
                       // them — but imported recipes can have any basePortions (e.g. "rinde 4 porciones"),
                       // so the scaling has to go through basePortions to stay correct for those too.
+                      // amount null = "a gusto": shown by name only, never scaled.
                       const basePortions = selectedRecipe.basePortions || 1;
-                      const adjustedAmount = Number(((ing.amount * portionsCount) / basePortions).toFixed(1));
                       return (
                         <li key={i} className="flex justify-between py-2 items-center">
                           <span className="font-medium">{ing.name}</span>
-                          <span className="text-xs font-bold text-[#4A7856] bg-[#4A7856]/10 px-2 py-0.5 rounded-full shrink-0">
-                            {adjustedAmount} {ing.unit}
-                          </span>
+                          {ing.amount !== null && (
+                            <span className="text-xs font-bold text-[#4A7856] bg-[#4A7856]/10 px-2 py-0.5 rounded-full shrink-0">
+                              {Number(((ing.amount * portionsCount) / basePortions).toFixed(1))} {ing.unit}
+                            </span>
+                          )}
                         </li>
                       );
                     })}

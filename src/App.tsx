@@ -14,6 +14,7 @@ import InteractivePlannerView from './components/InteractivePlanner';
 import BreakfastSnacksView from './components/BreakfastSnacks';
 import TeamManager from './components/TeamManager';
 import ImportRecipeView from './components/ImportRecipe';
+import GuiaView from './components/Guia';
 
 const DEFAULT_TEAM: TeamMember[] = [
   { id: 'yo', name: 'Yo', initials: 'YO', color: 'bg-[#4A7856] text-white' }
@@ -360,6 +361,8 @@ export default function App() {
           {activeSection === 'snacks' && (
             <BreakfastSnacksView />
           )}
+
+          {activeSection === 'guia' && <GuiaView />}
 
           {activeSection === 'planificador' && (
             <InteractivePlannerView

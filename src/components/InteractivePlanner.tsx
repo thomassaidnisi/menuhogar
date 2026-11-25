@@ -6,6 +6,7 @@ import {
 import { TeamMember, Recipe } from '../types';
 import { weeklyPlans } from '../recipesData';
 import { loadCustomRecipes } from '../customRecipesData';
+import { nutritionMealRecipes, ORIGIN_LABEL } from '../nutritionData';
 import AssigneeSelector from './AssigneeSelector';
 
 interface InteractivePlannerProps {
@@ -22,6 +23,7 @@ type MealType = 'almuerzo' | 'cena';
 type MealSlot = {
   recipeRef?: { week: number; day: string; mealType: MealType };
   customRecipeId?: string; // references an imported recipe (mh_custom_recipes_v1), mutually exclusive with recipeRef
+  nutritionRecipeId?: string; // nut_*/tal_* id from nutritionData.ts, mutually exclusive with the two above
   customText: string;
 };
 
@@ -32,7 +34,7 @@ type Category = 'Verdulería' | 'Carnicería' | 'Lácteos y Huevos' | 'Almacén'
 interface PlannerShopItem {
   id: string;
   name: string;
-  amount: number;
+  amount: number | null; // null = "a gusto": shown by name only
   unit: string;
   category: Category;
   checked: boolean;
@@ -91,6 +93,19 @@ Object.keys(weeklyPlans).forEach((weekKey) => {
   });
 });
 
+// Nutrition "comidas" offered in the planner: only real meals. Pan/Salsa are side preparations and
+// the planner has no accompaniment slot, so they stay in the Recetario only.
+const plannerNutritionRecipes = nutritionMealRecipes.filter((r) => r.category === 'Almuerzo' || r.category === 'Cena');
+
+// Units ('u' from nutrition/imported recipes, 'ud' from the ebook) round up to a whole number —
+// you can't buy 1.3 onions. Everything else keeps at most 1 decimal. null ("a gusto") is untouched.
+function roundShopAmount(amount: number | null, unit: string): number | null {
+  if (amount === null) return null;
+  // toFixed(6) first so float noise (2.0000000001) doesn't ceil up to 3
+  const clean = Number(amount.toFixed(6));
+  return unit === 'u' || unit === 'ud' ? Math.ceil(clean) : Number(clean.toFixed(1));
+}
+
 function resolveRecipe(ref: { week: number; day: string; mealType: MealType }): Recipe | undefined {
   const wp = weeklyPlans[ref.week];
   if (!wp) return undefined;
@@ -103,6 +118,7 @@ function resolveRecipe(ref: { week: number; day: string; mealType: MealType }): 
 function resolveSlotRecipe(slot: MealSlot, customRecipes: Recipe[]): Recipe | undefined {
   if (slot.recipeRef) return resolveRecipe(slot.recipeRef);
   if (slot.customRecipeId) return customRecipes.find((r) => r.id === slot.customRecipeId);
+  if (slot.nutritionRecipeId) return nutritionMealRecipes.find((r) => r.id === slot.nutritionRecipeId);
   return undefined;
 }
 
@@ -187,6 +203,7 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
     updateSlot(pickerTarget.day, pickerTarget.mealType, {
       recipeRef: { week, day: recipeDay, mealType },
       customRecipeId: undefined,
+      nutritionRecipeId: undefined,
       customText: ''
     });
     setPickerTarget(null);
@@ -198,6 +215,19 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
     updateSlot(pickerTarget.day, pickerTarget.mealType, {
       recipeRef: undefined,
       customRecipeId: recipeId,
+      nutritionRecipeId: undefined,
+      customText: ''
+    });
+    setPickerTarget(null);
+    setPickerSearch('');
+  };
+
+  const handlePickNutritionRecipe = (recipeId: string) => {
+    if (!pickerTarget) return;
+    updateSlot(pickerTarget.day, pickerTarget.mealType, {
+      recipeRef: undefined,
+      customRecipeId: undefined,
+      nutritionRecipeId: recipeId,
       customText: ''
     });
     setPickerTarget(null);
@@ -205,7 +235,7 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
   };
 
   const handleClearRecipe = (day: string, mealType: MealType) => {
-    updateSlot(day, mealType, { recipeRef: undefined, customRecipeId: undefined });
+    updateSlot(day, mealType, { recipeRef: undefined, customRecipeId: undefined, nutritionRecipeId: undefined });
   };
 
   const handleAdjustDiners = (diff: number) => {
@@ -222,15 +252,18 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
       (['almuerzo', 'cena'] as MealType[]).forEach((mealType) => {
         const slot = state.days[day][mealType];
 
-        if (slot.recipeRef || slot.customRecipeId) {
+        if (slot.recipeRef || slot.customRecipeId || slot.nutritionRecipeId) {
           const recipe = resolveSlotRecipe(slot, customRecipes);
           if (!recipe) return;
 
+          // Every source scales as (amount * diners) / basePortions (ebook recipes have basePortions 1).
+          const basePortions = recipe.basePortions || 1;
           recipe.ingredients.forEach((ing) => {
             const key = `${ing.category}_${ing.name}_${ing.unit}`;
-            const amt = Number((ing.amount * state.diners).toFixed(1));
+            // Raw (unrounded) amounts are summed here; roundShopAmount runs once on the totals below.
+            const amt = ing.amount === null ? null : (ing.amount * state.diners) / basePortions;
             if (items[key]) {
-              items[key].amount = Number((items[key].amount + amt).toFixed(1));
+              if (amt !== null && items[key].amount !== null) items[key].amount = items[key].amount! + amt;
             } else {
               items[key] = {
                 id: `planner_shop_${key}`.replace(/\s+/g, '_'),
@@ -263,7 +296,7 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
 
     setState((prev) => ({
       ...prev,
-      shoppingItems: Object.values(items),
+      shoppingItems: Object.values(items).map((i) => ({ ...i, amount: roundShopAmount(i.amount, i.unit) })),
       mealPrepTasks: tasks,
       hasGenerated: true
     }));
@@ -588,7 +621,7 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
                           className="text-[10px] font-bold text-[#4A7856] hover:underline flex items-center gap-1"
                         >
                           <BookOpen className="w-3 h-3" />
-                          Ebook
+                          Recetario
                         </button>
                       </div>
 
@@ -729,7 +762,8 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
                                 )}
                               </span>
                               <span className={`text-sm text-[#2B2B28] font-medium truncate ${item.checked ? 'line-through' : ''}`}>
-                                {item.name} — <span className={`text-xs font-bold ${meta.text}`}>{item.amount} {item.unit}</span>
+                                {item.name}
+                                {item.amount !== null && <> — <span className={`text-xs font-bold ${meta.text}`}>{item.amount} {item.unit}</span></>}
                               </span>
                             </button>
                           </div>
@@ -924,6 +958,30 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
                     <span className="text-xs text-[#8A8579] shrink-0">{recipe.prepTime} mins</span>
                   </button>
                 ))}
+              {plannerNutritionRecipes
+                .filter((recipe) => {
+                  const q = pickerSearch.toLowerCase();
+                  if (!q) return true;
+                  if (recipe.name.toLowerCase().includes(q)) return true;
+                  return recipe.ingredients.some((ing) => ing.name.toLowerCase().includes(q));
+                })
+                .map((recipe) => (
+                  <button
+                    key={recipe.id}
+                    onClick={() => handlePickNutritionRecipe(recipe.id)}
+                    className="w-full text-left bg-[#FFFFFF] border border-[#E8E4DC] hover:border-[#4A7856]/50 hover:bg-[#FDFCFA] rounded-xl px-4 py-3 flex items-center justify-between gap-3 transition-all"
+                  >
+                    <div className="min-w-0">
+                      <span className="text-[9px] font-bold text-[#4A7856] bg-[#4A7856]/10 px-2 py-0.5 rounded-full uppercase tracking-wider">
+                        🌿 {ORIGIN_LABEL[recipe.origin!]} · {recipe.category}
+                      </span>
+                      <h5 className="font-serif font-bold text-sm text-[#2B2B28] mt-1 truncate">
+                        {recipe.name}
+                      </h5>
+                    </div>
+                    <span className="text-xs text-[#8A8579] shrink-0">{recipe.prepTime} mins</span>
+                  </button>
+                ))}
               {allRecipes
                 .filter(({ recipe }) => {
                   const q = pickerSearch.toLowerCase();
@@ -939,7 +997,7 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
                   >
                     <div className="min-w-0">
                       <span className="text-[9px] font-bold text-[#4A7856] bg-[#4A7856]/10 px-2 py-0.5 rounded-full uppercase tracking-wider">
-                        Sem. {week} · {day} · {mealType}
+                        Ebook · Sem. {week} · {day} · {mealType}
                       </span>
                       <h5 className="font-serif font-bold text-sm text-[#2B2B28] mt-1 truncate">
                         {recipe.name}

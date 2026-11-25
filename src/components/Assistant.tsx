@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { ChatMessage, Recipe } from '../types';
 import { weeklyPlans } from '../recipesData';
 import { loadCustomRecipes } from '../customRecipesData';
+import { nutritionMealRecipes } from '../nutritionData';
 
 interface AssistantProps {
   currentWeek: number;
@@ -29,6 +30,10 @@ const HELP_MESSAGE_TEXT = `¡Hola! Soy tu asistente de cocina de MenuHogar. Esto
 **Sobre las recetas**
 - Respondo dudas sobre cualquier receta del sistema (ingredientes, tiempos, procedimiento)
 - Busco opciones de desayunos y snacks
+
+**Con la Guía de la nutricionista**
+- Te digo si algo está dentro de la Guía (y en qué sección)
+- Te armo un desayuno o merienda según la Guía, con recetas de la app
 
 Lo que no hago: no invento recetas nuevas ni cuento calorías exactas — trabajo siempre con lo que ya está cargado en la app. ¿En qué te ayudo?`;
 
@@ -60,9 +65,14 @@ function buildPlannerContext(): string | undefined {
       (['almuerzo', 'cena'] as const).forEach((mealType) => {
         const slot = dayPlan[mealType];
         if (!slot) return;
-        const name = slot.recipeRef ? resolvePlannerRecipeName(slot.recipeRef) : slot.customText?.trim();
+        const fromSystem = slot.recipeRef || slot.nutritionRecipeId;
+        const name = slot.recipeRef
+          ? resolvePlannerRecipeName(slot.recipeRef)
+          : slot.nutritionRecipeId
+            ? nutritionMealRecipes.find((r) => r.id === slot.nutritionRecipeId)?.name
+            : slot.customText?.trim();
         if (name) {
-          const source = slot.recipeRef ? '(receta del sistema)' : '(escrito a mano por el usuario, sin ingredientes estructurados)';
+          const source = fromSystem ? '(receta del sistema)' : '(escrito a mano por el usuario, sin ingredientes estructurados)';
           lines.push(`- ${day} · ${mealType}: ${name} ${source}`);
         }
       });
@@ -132,6 +142,7 @@ export default function Assistant({ currentWeek }: AssistantProps) {
     { label: 'Estoy cansada, ¿qué hago de comer?', action: 'send' },
     { label: 'Se me desordenó la semana', action: 'send' },
     { label: 'Sugerime reemplazo para la carne picada', action: 'send' },
+    { label: 'Armame un desayuno según la guía', action: 'send' },
     { label: '¿Qué cocino de la Semana ' + currentWeek + '?', action: 'send' },
     { label: 'Tengo estos ingredientes, ¿qué cocino?', action: 'fill' }
   ];

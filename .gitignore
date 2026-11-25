@@ -7,3 +7,6 @@ coverage/
 .env*
 !.env.example
 reference/imagenes recetas Snacks/
+
+# Documentos originales (derechos de autor / datos personales): solo va el JSON transcripto
+*.pdf

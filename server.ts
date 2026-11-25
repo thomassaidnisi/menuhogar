@@ -11,6 +11,7 @@ dotenv.config();
 // BreakfastSnacks.tsx use.
 import { weeklyPlans } from './src/recipesData';
 import { breakfastSnacksRecipes } from './src/breakfastSnacksData';
+import { nutritionMealRecipes, nutritionSnackRecipes, guideSections, ORIGIN_LABEL } from './src/nutritionData';
 import { Recipe } from './src/types';
 
 const app = express();
@@ -76,7 +77,24 @@ function buildBreakfastSnacksContext(): string {
   );
 }
 
+// Only names (+ category/origin/time) for the nutrition recipes — the full text would roughly
+// double the prompt. The assistant can still point to the recipe and the user opens it in the app.
+function buildNutritionRecipesContext(): string {
+  return [...nutritionMealRecipes, ...nutritionSnackRecipes]
+    .map((r) => `- "${r.name}" [${r.category}] (${ORIGIN_LABEL[r.origin!]}, ${r.prepTime} min)`)
+    .join('\n');
+}
+
+// Titles + items only (summaries and tables left out to keep the prompt small).
+function buildGuideContext(): string {
+  return guideSections
+    .map((g) => `### ${g.title} (${g.source})\n${g.items.map((i) => `- ${i}`).join('\n')}`)
+    .join('\n');
+}
+
 const weeklyMenusContext = buildWeeklyMenusContext();
+const nutritionRecipesContext = buildNutritionRecipesContext();
+const guideContext = buildGuideContext();
 const breakfastSnacksContext = buildBreakfastSnacksContext();
 
 const BASE_SYSTEM_INSTRUCTION = `Sos el Asistente de Cocina de esta app de planificación de comidas para uso doméstico. Tu trabajo es ser un cerebro externo que ayuda a resolver la cocina del día a día, no un chef creativo.
@@ -85,6 +103,8 @@ const BASE_SYSTEM_INSTRUCTION = `Sos el Asistente de Cocina de esta app de plani
 Todo lo que sugerís, generás o recomendás sale EXCLUSIVAMENTE de los datos del sistema que se te pasan como contexto:
 - Los menús y recetas de las 4 semanas (almuerzos y cenas, con ingredientes y procedimiento)
 - El recetario de Desayunos y Snacks (con sus variantes)
+- Las recetas de la nutricionista y del taller antiinflamatorio (solo sus nombres)
+- La Guía de alimentación de la nutricionista y del taller antiinflamatorio
 - Las recetas que el usuario importó por su cuenta (si tiene alguna) — participan igual que las demás
 - La lógica de meal prep por niveles ("Regla de las 72 Horas"):
   - Nivel 1 — Mínimo Viable (15-20 min): blindar los primeros días de la semana
@@ -101,6 +121,8 @@ No inventás recetas, ingredientes ni menús que no estén en esos datos. Si te 
 - Armar una semana nueva usando los platos existentes del recetario
 - Dar el meal prep por niveles según la Regla de las 72 Horas
 - Sugerir opciones de Desayunos/Snacks cuando te lo pidan
+- Responder si un alimento o una costumbre está dentro de la Guía, citando la sección. Si la Guía no lo menciona, decilo: no inventes pautas
+- Armar desayunos/meriendas según la Guía, eligiendo recetas que existan en el sistema (priorizá las de la nutricionista y el taller)
 - Acompañar sin juzgar los días sin energía
 
 ## Cuando te dicen qué ingredientes tienen disponibles
@@ -112,7 +134,7 @@ Si ninguna receta matchea bien, decilo con claridad y sugerí la más cercana ig
 
 ## Qué NO podés hacer
 - No inventás recetas nuevas ni creás menús fuera del sistema
-- No personalizás dietas ni contás calorías (todavía no existe esa función en la app)
+- No personalizás dietas ni contás calorías (todavía no existe esa función en la app). La Guía es orientación general, no un plan médico: si te preguntan por una condición de salud, sugerí consultarlo con la nutricionista
 - No le decís al usuario lo que "debería" hacer
 - No lo hacés pensar más — lo ayudás a pensar menos
 
@@ -140,7 +162,13 @@ Cuando el usuario te comparta su semana armada en el Planificador (los platos qu
 ${weeklyMenusContext}
 
 ## Datos del sistema — recetario de Desayunos y Snacks (única fuente de verdad para esta categoría)
-${breakfastSnacksContext}`;
+${breakfastSnacksContext}
+
+## Datos del sistema — recetas de la nutricionista y del taller antiinflamatorio (solo nombres; el detalle está en la app, en Desayunos y Snacks o en el Recetario)
+${nutritionRecipesContext}
+
+## Datos del sistema — Guía de alimentación (única fuente de verdad para "¿esto está dentro de la guía?")
+${guideContext}`;
 
 app.post('/api/chat', async (req, res) => {
   try {
