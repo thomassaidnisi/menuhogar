@@ -7,6 +7,7 @@ import { TeamMember, Recipe } from '../types';
 import { weeklyPlans } from '../recipesData';
 import { loadCustomRecipes } from '../customRecipesData';
 import { nutritionMealRecipes, ORIGIN_LABEL } from '../nutritionData';
+import { prepLevel } from '../recipeTasks';
 import AssigneeSelector from './AssigneeSelector';
 
 interface InteractivePlannerProps {
@@ -276,7 +277,7 @@ export default function InteractivePlanner({ team, assignments, onAssign, onAddM
             }
           });
 
-          const level: 1 | 2 | 3 = recipe.prepTime <= 20 ? 1 : recipe.prepTime <= 45 ? 2 : 3;
+          const level = prepLevel(recipe.prepTime);
           tasks.push({
             id: `planner_mp_${day}_${mealType}_${Math.random().toString(36).slice(2)}`,
             title: `Preparar: ${recipe.name} (${day} · ${mealType})`,

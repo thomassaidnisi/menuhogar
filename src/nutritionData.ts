@@ -3,7 +3,8 @@
 // JSON a los tipos que ya usa la app — el JSON es la única fuente.
 import recetasRaw from '../reference/nutricion/recetas_nutricion.json';
 import guiaRaw from '../reference/nutricion/guia_nutricion.json';
-import { Recipe, SnackRecipe } from './types';
+import prepTasksRaw from '../reference/nutricion/prep_tasks_nutricion.json';
+import { PrepTask, Recipe, SnackRecipe } from './types';
 
 type Origin = 'nutricionista' | 'taller';
 type IngredientCategory = Recipe['ingredients'][number]['category'];
@@ -41,6 +42,7 @@ export const ORIGIN_LABEL: Record<NonNullable<Recipe['origin']>, string> = {
 };
 
 const recetas = recetasRaw as RawRecipe[];
+const prepTasksById = prepTasksRaw as Record<string, PrepTask[]>;
 export const guideSections = guiaRaw as GuideSection[];
 
 // ponytail: the JSON has no góndola category, so it's guessed from the ingredient name. It feeds
@@ -72,7 +74,8 @@ export const nutritionMealRecipes: Recipe[] = recetas
     note: r.note,
     origin: r.origin,
     category: MEAL_CATEGORY[r.category],
-    estimatedCalories: r.estimatedCalories
+    estimatedCalories: r.estimatedCalories,
+    prepTasks: prepTasksById[r.id]
   }));
 
 export const nutritionSnackRecipes: SnackRecipe[] = recetas

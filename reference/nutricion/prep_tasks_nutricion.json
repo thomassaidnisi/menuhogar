@@ -1,0 +1,644 @@
+{
+ "nut_batido_verde_1": [
+  {
+   "level": 1,
+   "title": "Prelavar la espinaca y dejar la chía en remojo",
+   "description": "Lavá la espinaca con vinagre, secala y guardala en un tapper de vidrio. Activá la chía en agua unas horas.",
+   "minutes": 10
+  }
+ ],
+ "nut_batido_verde_2": [
+  {
+   "level": 1,
+   "title": "Armar el kit del batido de durazno y jengibre",
+   "description": "Prelavá la espinaca, pelá el jengibre y freezá el durazno en trozos. Después es solo licuar.",
+   "minutes": 15
+  }
+ ],
+ "nut_batido_verde_3": [
+  {
+   "level": 1,
+   "title": "Remojar la avena y la chía del batido",
+   "description": "Dejá 2 cucharadas de avena sin gluten y la chía en remojo unas horas. Prelavá la espinaca.",
+   "minutes": 10
+  }
+ ],
+ "nut_batido_verde_apio": [
+  {
+   "level": 1,
+   "title": "Prelavar espinaca y cortar el apio",
+   "description": "Lavá la espinaca, cortá el apio y la pera, y guardalos en tapper de vidrio.",
+   "minutes": 10
+  }
+ ],
+ "nut_detox_anana_pepino_manzana": [
+  {
+   "level": 1,
+   "title": "Cortar y freezar el ananá y el pepino",
+   "description": "Cortá el ananá y el pepino en trozos y guardalos en un tapper. Podés freezar el ananá.",
+   "minutes": 10
+  }
+ ],
+ "nut_detox_anana_limon_pepino": [
+  {
+   "level": 1,
+   "title": "Cortar el pepino, el apio y el ananá",
+   "description": "Pelá y cortá todo, y dejalo en un tapper de vidrio en la heladera.",
+   "minutes": 10
+  }
+ ],
+ "nut_detox_anana_pomelo": [
+  {
+   "level": 1,
+   "title": "Cortar y freezar ananá y frutillas",
+   "description": "Pelá y cortá el ananá, lavá las frutillas y la menta, y freezá la fruta en bolsitas por porción.",
+   "minutes": 10
+  }
+ ],
+ "nut_smoothie_energetico": [
+  {
+   "level": 1,
+   "title": "Freezar bananas y remojar la avena",
+   "description": "Cortá bananas en rodajas y freezalas. Dejá 30 g de avena remojada por porción, 2 horas antes.",
+   "minutes": 10
+  }
+ ],
+ "nut_pink_smoothie": [
+  {
+   "level": 1,
+   "title": "Armar bolsitas de frutos rojos congelados",
+   "description": "Lavá y freezá arándanos y frutillas en porciones de 1 vaso.",
+   "minutes": 10
+  }
+ ],
+ "nut_licuado_frutillas_pera": [
+  {
+   "level": 1,
+   "title": "Lavar y cortar las frutillas y la pera",
+   "description": "Guardalas en tapper de vidrio; la fruta se puede freezar en porciones.",
+   "minutes": 10
+  }
+ ],
+ "nut_batido_naranja_antioxidante": [
+  {
+   "level": 1,
+   "title": "Pelar y rallar la zanahoria, y pelar el jengibre",
+   "description": "Dejá la zanahoria rallada y el jengibre pelado en un tapper. Exprimí las naranjas el día que lo hagas.",
+   "minutes": 10
+  }
+ ],
+ "nut_licuado_frutillas_naranja_manzana": [
+  {
+   "level": 1,
+   "title": "Lavar las frutillas y activar la chía",
+   "description": "Lavá y cortá las frutillas y dejá la chía en remojo unas horas.",
+   "minutes": 10
+  }
+ ],
+ "nut_licuado_arandanos_banana": [
+  {
+   "level": 1,
+   "title": "Freezar banana, arándanos y frutillas",
+   "description": "Armá bolsitas por porción con la fruta ya cortada.",
+   "minutes": 10
+  }
+ ],
+ "nut_licuado_pera_frambuesa": [
+  {
+   "level": 1,
+   "title": "Armar bolsitas de pera y frambuesas y activar las nueces",
+   "description": "Cortá la pera, freezá con las frambuesas y dejá las nueces en remojo 8 a 12 hs.",
+   "minutes": 10
+  }
+ ],
+ "nut_chia_pudding": [
+  {
+   "level": 1,
+   "title": "Dejar listo el chía pudding de la noche",
+   "description": "Mezclá la chía con la leche o el yogur en un vaso con tapa y guardalo en la heladera. Se sirve a la mañana.",
+   "minutes": 10
+  }
+ ],
+ "nut_bowl_frutillas_almendras": [
+  {
+   "level": 1,
+   "title": "Freezar las frutillas y activar las almendras",
+   "description": "Lavá y cortá las frutillas y freezalas. Dejá las almendras en remojo 8 a 12 hs.",
+   "minutes": 10
+  }
+ ],
+ "nut_bowl_azulado_granola": [
+  {
+   "level": 1,
+   "title": "Freezar arándanos y tener la granola lista",
+   "description": "Freezá porciones de arándanos y verificá que haya granola en el frasco.",
+   "minutes": 10
+  }
+ ],
+ "nut_pancakes_avena": [
+  {
+   "level": 1,
+   "title": "Dejar la mezcla de pancakes medida",
+   "description": "Pesá la avena sin gluten por porción en frasquitos y tené a mano el resto de los secos.",
+   "minutes": 10
+  }
+ ],
+ "nut_pan_nube": [
+  {
+   "level": 1,
+   "title": "Separar las claras y preparar el acompañamiento",
+   "description": "Separá los huevos y guardá las claras en un frasco. Lavá la rúcula y los rabanitos.",
+   "minutes": 10
+  }
+ ],
+ "nut_omelette_brocoli": [
+  {
+   "level": 1,
+   "title": "Hervir el brócoli y cocinar la espinaca",
+   "description": "Hervilo 3 minutos, picá todo y mezclá con la ricota. Guardá el relleno en la heladera hasta 2 días.",
+   "minutes": 15
+  }
+ ],
+ "nut_toston_palta": [
+  {
+   "level": 1,
+   "title": "Cortar el pan semillado en rebanadas",
+   "description": "Cortalo y freezalo en porciones para tostar directo desde el freezer. Lavá las espinacas.",
+   "minutes": 10
+  }
+ ],
+ "nut_pan_semillas": [
+  {
+   "level": 2,
+   "title": "Remojar y procesar los frutos secos y el trigo sarraceno",
+   "description": "Procesá apenas las castañas, almendras y el trigo sarraceno (con textura). Guardalos listos.",
+   "minutes": 30
+  },
+  {
+   "level": 3,
+   "title": "Armar la masa del pan y dejarla reposar",
+   "description": "Mezclá todo, ponelo en el molde y dejalo reposar 2 horas. Después hornear 40 minutos.",
+   "minutes": 120
+  }
+ ],
+ "nut_pan_avena_express": [
+  {
+   "level": 1,
+   "title": "Procesar la avena sin gluten",
+   "description": "Procesá la avena en polvo fino y guardala en un frasco, lista para mezclar.",
+   "minutes": 10
+  }
+ ],
+ "nut_wraps_sarraceno": [
+  {
+   "level": 2,
+   "title": "Hacer la masa y dejarla leudar",
+   "description": "Amasá, dejá 30 minutos y armá los bollitos de 100 g.",
+   "minutes": 45
+  },
+  {
+   "level": 2,
+   "title": "Cocinar y freezar los wraps",
+   "description": "Cocinalos vuelta y vuelta, apilalos con separadores y freezalos. Salen directo al plato.",
+   "minutes": 30
+  }
+ ],
+ "nut_masa_tarta_sarraceno": [
+  {
+   "level": 2,
+   "title": "Hacer la masa y estirarla",
+   "description": "Amasá, estirá entre dos films a 4 mm y llevá 30 minutos a la heladera.",
+   "minutes": 45
+  },
+  {
+   "level": 1,
+   "title": "Freezar las tapas de masa",
+   "description": "Dejá cada tapa entre films y freezala hasta 3 meses.",
+   "minutes": 10
+  }
+ ],
+ "nut_ensalada_variete": [
+  {
+   "level": 2,
+   "title": "Cocinar las lentejas o garbanzos y hornear la calabaza",
+   "description": "Remojá, cociná y guardalas en tapper. Podés hornear la calabaza en cubitos para sumar.",
+   "minutes": 45
+  },
+  {
+   "level": 1,
+   "title": "Lavar y cortar los vegetales",
+   "description": "Lavá las hojas verdes, cortá el pepino, los cherry y hacé el brócoli y las zanahorias salteadas.",
+   "minutes": 20
+  }
+ ],
+ "nut_ensalada_happy": [
+  {
+   "level": 2,
+   "title": "Cocinar la quinoa o el arroz integral y hornear la calabaza",
+   "description": "Enjuagá bien la quinoa. Cocinala y guardala en tapper junto con la calabaza horneada.",
+   "minutes": 45
+  },
+  {
+   "level": 1,
+   "title": "Lavar hojas verdes y cortar los tomates",
+   "description": "Guardalos secos en recipientes de vidrio.",
+   "minutes": 10
+  }
+ ],
+ "nut_ensalada_abrilina": [
+  {
+   "level": 1,
+   "title": "Condimentar el lomo y lavar los vegetales",
+   "description": "Dejá el lomo con orégano y sal. Lavá la espinaca, cortá el pepino, los tomates y el verdeo.",
+   "minutes": 15
+  }
+ ],
+ "nut_ensalada_huevo_palta_merluza": [
+  {
+   "level": 1,
+   "title": "Hervir los huevos y picar la cebolla morada y el repollo",
+   "description": "Dejá todo en tapper. La palta se corta el día que se come.",
+   "minutes": 15
+  },
+  {
+   "level": 1,
+   "title": "Marinar la merluza con limón y tomillo",
+   "description": "Dejala en la heladera hasta el día de cocinarla.",
+   "minutes": 10
+  }
+ ],
+ "nut_salmon_esparragos": [
+  {
+   "level": 1,
+   "title": "Marinar el salmón con limón, naranja y tomillo",
+   "description": "Dejalo en un recipiente tapado en la heladera hasta el día de cocinarlo.",
+   "minutes": 10
+  },
+  {
+   "level": 1,
+   "title": "Lavar y cortar los espárragos",
+   "description": "Cortá la parte dura y guardalos secos en un tapper de vidrio.",
+   "minutes": 10
+  }
+ ],
+ "nut_falafel_dip_zanahoria": [
+  {
+   "level": 1,
+   "title": "Remojar los garbanzos (12 a 24 hs)",
+   "description": "Cubrilos con agua en un bowl de vidrio y dejalos en la mesada o en la heladera.",
+   "minutes": 5
+  },
+  {
+   "level": 2,
+   "title": "Procesar y armar los falafel",
+   "description": "Escurrí, secá, procesá con el resto y llevá 1 hora a la heladera. Armá los falafel y freezalos crudos.",
+   "minutes": 45
+  },
+  {
+   "level": 1,
+   "title": "Hacer el dip de zanahoria",
+   "description": "Procesá la zanahoria con aceite y sal y guardalo en un frasco.",
+   "minutes": 10
+  }
+ ],
+ "nut_risotto_calabaza_pollo": [
+  {
+   "level": 2,
+   "title": "Cocinar las pechugas y cortar la calabaza y la cebolla",
+   "description": "Cociná el pollo a la plancha (20 min) y cortá la calabaza y las cebollas en cubitos.",
+   "minutes": 40
+  },
+  {
+   "level": 3,
+   "title": "Cocinar el risotto completo y freezarlo en porciones",
+   "description": "Seguí la receta, dejá enfriar y guardalo en tapper de vidrio en el freezer.",
+   "minutes": 90
+  }
+ ],
+ "nut_granola_casera": [
+  {
+   "level": 1,
+   "title": "Activar las almendras y nueces",
+   "description": "Dejalas en remojo 8 a 12 hs, escurrilas y secalas con papel de cocina.",
+   "minutes": 10
+  },
+  {
+   "level": 3,
+   "title": "Hornear la granola y guardarla en frasco",
+   "description": "Hornear con mezclado cada tanto; dura hasta 20 días en un frasco de vidrio.",
+   "minutes": 60
+  }
+ ],
+ "nut_granola_gluten_free": [
+  {
+   "level": 1,
+   "title": "Activar la chía con la manzana rallada",
+   "description": "Dejala 15 minutos hasta que se active.",
+   "minutes": 15
+  },
+  {
+   "level": 2,
+   "title": "Hornear la granola y guardarla en frasco",
+   "description": "Hornear 20-25 minutos; consumirla en la semana porque se humedece.",
+   "minutes": 45
+  }
+ ],
+ "nut_tartufini_coco": [
+  {
+   "level": 1,
+   "title": "Armar las trufas de coco y guardarlas en la heladera",
+   "description": "Hacé las bolitas y guardalas en tapper de vidrio.",
+   "minutes": 20
+  }
+ ],
+ "nut_energy_balls_mani": [
+  {
+   "level": 1,
+   "title": "Procesar y armar las energy balls",
+   "description": "Armá las bolitas y guardalas en tapper de vidrio hasta 5 días en la heladera.",
+   "minutes": 30
+  }
+ ],
+ "nut_trufas_naranja_chocolate": [
+  {
+   "level": 1,
+   "title": "Hidratar los dátiles y armar las trufas",
+   "description": "Hidratalos, procesá y armá las bolitas. Duran 5 días en la heladera.",
+   "minutes": 30
+  }
+ ],
+ "nut_trufas_coco_canela": [
+  {
+   "level": 1,
+   "title": "Hidratar los dátiles y armar las trufas",
+   "description": "Hidratalos, procesá y armá las bolitas. Duran 5 días en la heladera.",
+   "minutes": 30
+  }
+ ],
+ "nut_porridge_duraznos": [
+  {
+   "level": 1,
+   "title": "Cocinar el porridge base",
+   "description": "Cociná la avena con la canela y guardala en la heladera; se recalienta con leche.",
+   "minutes": 20
+  }
+ ],
+ "nut_cookies_avena_manzana": [
+  {
+   "level": 2,
+   "title": "Hacer la masa y hornear las cookies",
+   "description": "Dura hasta 7 días en frasco de vidrio, listas para el desayuno.",
+   "minutes": 45
+  }
+ ],
+ "tal_tarta_vegetales": [
+  {
+   "level": 2,
+   "title": "Hacer y precocinar la masa de almendra",
+   "description": "Amasá, extendé en el molde y precociná 10 minutos a 180 °C. Se guarda en la heladera.",
+   "minutes": 30
+  },
+  {
+   "level": 1,
+   "title": "Saltear los vegetales del relleno",
+   "description": "Salteá para que no humedezcan la tarta y guardalos en tapper.",
+   "minutes": 15
+  }
+ ],
+ "tal_pan_almendra_psyllium": [
+  {
+   "level": 1,
+   "title": "Dejar hidratar la masa y armar los panes",
+   "description": "Mezclá y reposá 5 minutos; se pueden cocinar y freezar.",
+   "minutes": 15
+  }
+ ],
+ "tal_empanadas_almendra": [
+  {
+   "level": 1,
+   "title": "Hacer la masa y dejarla hidratar",
+   "description": "Estirala entre films y guardala tapada. Rellená el día de cocinar.",
+   "minutes": 20
+  },
+  {
+   "level": 1,
+   "title": "Preparar el relleno",
+   "description": "Cocinar el relleno de vegetales o proteína y dejarlo en la heladera.",
+   "minutes": 20
+  }
+ ],
+ "tal_pan_molde_girasol": [
+  {
+   "level": 2,
+   "title": "Hornear el pan de molde y rebanarlo",
+   "description": "Dejá enfriar, cortá en rebanadas y freezalas.",
+   "minutes": 55
+  }
+ ],
+ "tal_pan_almendra_huevo": [
+  {
+   "level": 2,
+   "title": "Hornear el pan y rebanarlo",
+   "description": "Dejá enfriar, cortá en rebanadas y freezalas.",
+   "minutes": 55
+  }
+ ],
+ "tal_tortillita_espinaca": [
+  {
+   "level": 1,
+   "title": "Licuar la mezcla de tortillitas",
+   "description": "Licuá huevos, harina y espinaca; guardala en un frasco hasta 1 día.",
+   "minutes": 10
+  }
+ ],
+ "tal_chipa_saludable": [
+  {
+   "level": 2,
+   "title": "Armar y hornear los chipás",
+   "description": "Dejá reposar la mezcla 10 min, hornear 20 min y freezalos.",
+   "minutes": 35
+  }
+ ],
+ "tal_pan_coco_lino": [
+  {
+   "level": 1,
+   "title": "Hornear los panes de coco y lino y freezarlos",
+   "description": "Cocinalos y guardalos en el freezer.",
+   "minutes": 20
+  }
+ ],
+ "tal_panqueque_almendra_banana": [
+  {
+   "level": 1,
+   "title": "Cocinar los panqueques y freezarlos",
+   "description": "Cocinalos a fuego bajo; se recalientan en la sartén.",
+   "minutes": 20
+  }
+ ],
+ "tal_mermelada_arandanos": [
+  {
+   "level": 1,
+   "title": "Hacer la mermelada y dejarla en la heladera",
+   "description": "Necesita 8 a 12 horas de reposo; dura hasta 7 días.",
+   "minutes": 25
+  }
+ ],
+ "tal_brownie": [
+  {
+   "level": 2,
+   "title": "Hornear el brownie y dejarlo reposar",
+   "description": "Reposo de 45 minutos antes de porcionar; freezar las porciones.",
+   "minutes": 90
+  }
+ ],
+ "tal_pan_platano": [
+  {
+   "level": 2,
+   "title": "Hornear el pan de plátano y rebanarlo",
+   "description": "Cortá en rebanadas y freezalas para el desayuno.",
+   "minutes": 55
+  }
+ ],
+ "tal_budin_banana_arandanos": [
+  {
+   "level": 2,
+   "title": "Hornear el budín y porcionarlo",
+   "description": "Cortá en 6 porciones y freezalas.",
+   "minutes": 45
+  }
+ ],
+ "tal_postre_coco_arandanos": [
+  {
+   "level": 1,
+   "title": "Medir los secos del postre",
+   "description": "Pesá la harina de coco, el psyllium y el eritritol en frasquitos.",
+   "minutes": 10
+  }
+ ],
+ "tal_postre_ricota_limon": [
+  {
+   "level": 1,
+   "title": "Medir los secos y rallar el limón",
+   "description": "Dejá los secos listos y guardá la ralladura.",
+   "minutes": 10
+  }
+ ],
+ "tal_budincito_coco_ricota": [
+  {
+   "level": 2,
+   "title": "Hornear los budincitos y guardarlos",
+   "description": "Guardalos en la heladera hasta 4 días.",
+   "minutes": 50
+  }
+ ],
+ "tal_budin_banana_coco_ricota": [
+  {
+   "level": 2,
+   "title": "Hornear los budines y guardarlos",
+   "description": "Guardalos en la heladera o freezalos.",
+   "minutes": 55
+  }
+ ],
+ "tal_budincito_ricota_huevo_coco": [
+  {
+   "level": 1,
+   "title": "Mezclar y hornear los budincitos",
+   "description": "Guardalos en la heladera.",
+   "minutes": 25
+  }
+ ],
+ "tal_jugo_verde": [
+  {
+   "level": 1,
+   "title": "Cortar el pepino, el apio y el jengibre",
+   "description": "Dejalos en un tapper y prelavá la espinaca.",
+   "minutes": 10
+  }
+ ],
+ "tal_cheese_omelette": [
+  {
+   "level": 1,
+   "title": "Lavar y picar la espinaca",
+   "description": "Guardala en un tapper de vidrio.",
+   "minutes": 5
+  }
+ ],
+ "tal_pan_dulce_panettone": [
+  {
+   "level": 2,
+   "title": "Hornear el pan dulce",
+   "description": "Dejá reposar 10 min antes de desmoldar; se guarda tapado.",
+   "minutes": 45
+  }
+ ],
+ "tal_turron_saludable": [
+  {
+   "level": 1,
+   "title": "Armar el turrón y llevarlo al freezer",
+   "description": "Mínimo 2 horas de freezer; cortá en porciones.",
+   "minutes": 30
+  }
+ ],
+ "tal_crackers_curcuma": [
+  {
+   "level": 2,
+   "title": "Hornear los crackers y guardarlos en frasco",
+   "description": "Secalos bien para que queden crocantes.",
+   "minutes": 30
+  }
+ ],
+ "tal_budin_naranja": [
+  {
+   "level": 2,
+   "title": "Hornear el budín y porcionarlo",
+   "description": "Dejá enfriar y guardá en porciones.",
+   "minutes": 60
+  }
+ ],
+ "tal_budin_ingles": [
+  {
+   "level": 2,
+   "title": "Hornear el budín inglés",
+   "description": "Guardalo tapado.",
+   "minutes": 40
+  }
+ ],
+ "tal_budin_manzana": [
+  {
+   "level": 2,
+   "title": "Rallar las manzanas y hornear el budín",
+   "description": "Dejá enfriar antes de desmoldar.",
+   "minutes": 50
+  }
+ ],
+ "tal_picada_saludable": [
+  {
+   "level": 1,
+   "title": "Lavar y cortar las frutas y verduras de la picada",
+   "description": "Cortá la manzana (con limón), los cherry y las zanahorias.",
+   "minutes": 20
+  },
+  {
+   "level": 1,
+   "title": "Cortar los quesos y fiambres",
+   "description": "Guardalos tapados en la heladera.",
+   "minutes": 15
+  }
+ ],
+ "tal_mayonesa_palta": [
+  {
+   "level": 1,
+   "title": "Hacer la mayonesa de palta",
+   "description": "Licuá con perejil y limón; guardá en un frasco con limón arriba.",
+   "minutes": 10
+  }
+ ],
+ "tal_mayonesa_yogur_curcuma": [
+  {
+   "level": 1,
+   "title": "Hacer la mayonesa de yogur y cúrcuma",
+   "description": "Mezclá y dejala 15-30 min en la heladera.",
+   "minutes": 10
+  }
+ ]
+}

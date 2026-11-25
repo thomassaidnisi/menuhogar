@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Users, Plus, Trash2, Menu, X, ChevronRight } from 'lucide-react';
 import { weeklyPlans, getMealPrepTasks } from './recipesData';
 import { TeamMember, WeekPlan } from './types';
+import {
+  loadMealPrepExtras, getExtraTasks, recipeTaskPrefix, MEALPREP_EXTRA_KEY, MealPrepExtras,
+  loadPrepTasksCache, PREP_TASKS_CACHE_KEY, PrepTasksCache, fetchPrepTasks, findPickableRecipe
+} from './recipeTasks';
 
 // Import Views
 import Sidebar from './components/Sidebar';
@@ -68,6 +72,13 @@ export default function App() {
     return saved ? JSON.parse(saved) : {};
   });
 
+  // Recipes the user added to each Meal Prep week (on top of the 9 fixed tasks)
+  const [mealPrepExtras, setMealPrepExtras] = useState<MealPrepExtras>(() => loadMealPrepExtras());
+  // AI-generated prep tasks for added recipes that don't ship their own (ebook, older imported)
+  const [prepTasksCache, setPrepTasksCache] = useState<PrepTasksCache>(() => loadPrepTasksCache());
+  const [generatingPrepTasks, setGeneratingPrepTasks] = useState<string[]>([]);
+  const attemptedPrepTasks = useRef(new Set<string>()); // one AI try per recipe per session
+
   // Mobile menu slide in state (for top-bar header actions)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -95,6 +106,52 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem('mh_assignments', JSON.stringify(assignments));
   }, [assignments]);
+
+  useEffect(() => {
+    localStorage.setItem(MEALPREP_EXTRA_KEY, JSON.stringify(mealPrepExtras));
+  }, [mealPrepExtras]);
+
+  useEffect(() => {
+    localStorage.setItem(PREP_TASKS_CACHE_KEY, JSON.stringify(prepTasksCache));
+  }, [prepTasksCache]);
+
+  // Generates prep tasks for every added recipe that has none yet — right after it's added, and
+  // again next session for ones whose generation failed (failures aren't cached; until then the
+  // recipe shows the generic fallback task).
+  useEffect(() => {
+    const ids = new Set(Object.values(mealPrepExtras).flat());
+    ids.forEach(async (id) => {
+      if (attemptedPrepTasks.current.has(id) || prepTasksCache[id]) return;
+      attemptedPrepTasks.current.add(id);
+      const recipe = findPickableRecipe(id);
+      if (!recipe || recipe.prepTasks?.length) return;
+      setGeneratingPrepTasks((prev) => [...prev, id]);
+      const tasks = await fetchPrepTasks(recipe);
+      if (tasks) setPrepTasksCache((prev) => ({ ...prev, [id]: tasks }));
+      setGeneratingPrepTasks((prev) => prev.filter((x) => x !== id));
+    });
+  }, [mealPrepExtras]);
+
+  const handleAddMealPrepRecipe = (week: number, recipeId: string) => {
+    setMealPrepExtras((prev) => {
+      const ids = prev[week] ?? [];
+      return ids.includes(recipeId) ? prev : { ...prev, [week]: [...ids, recipeId] };
+    });
+  };
+
+  // Also drops the checked/assigned state of all its tasks, so re-adding the recipe starts fresh and
+  // no stale key lingers (progress only counts listed tasks, so it's correct either way).
+  const handleRemoveMealPrepRecipe = (week: number, recipeId: string) => {
+    const keyPrefix = `week_${week}_mp_${recipeTaskPrefix(week, recipeId)}`;
+    // Exact suffix match (_0, _1…, _generic): a plain startsWith would also hit a recipe whose id
+    // merely starts with this one (w1_sopa vs w1_sopa_verduras).
+    const isThisRecipesTask = (k: string) => k.startsWith(keyPrefix) && /^(\d+|generic)$/.test(k.slice(keyPrefix.length));
+    const dropPrefix = <T,>(obj: Record<string, T>) =>
+      Object.fromEntries(Object.entries(obj).filter(([k]) => !isThisRecipesTask(k)));
+    setMealPrepExtras((prev) => ({ ...prev, [week]: (prev[week] ?? []).filter((id) => id !== recipeId) }));
+    setCheckedMealPrepTasks(dropPrefix);
+    setAssignments(dropPrefix);
+  };
 
   // Handlers for team members
   const handleAddMember = (name: string) => {
@@ -196,7 +253,10 @@ export default function App() {
 
   // Meal prep progress stats
   const getMealPrepStats = () => {
-    const rawTasks = getMealPrepTasks(currentWeek);
+    const rawTasks = [
+      ...getMealPrepTasks(currentWeek),
+      ...getExtraTasks(currentWeek, mealPrepExtras, prepTasksCache, generatingPrepTasks)
+    ];
     // Find the current active level's completed stats (we assume level 1 stats for dashboard summary)
     // Or we find which tasks of Level 1 are completed
     const lvl1Tasks = rawTasks.filter((t) => t.level === 1);
@@ -355,6 +415,11 @@ export default function App() {
               }
               assignments={assignments}
               onAssign={handleAssign}
+              extraRecipeIds={mealPrepExtras[currentWeek] ?? []}
+              prepTasksCache={prepTasksCache}
+              generatingRecipeIds={generatingPrepTasks}
+              onAddRecipe={(id) => handleAddMealPrepRecipe(currentWeek, id)}
+              onRemoveRecipe={(id) => handleRemoveMealPrepRecipe(currentWeek, id)}
             />
           )}
 

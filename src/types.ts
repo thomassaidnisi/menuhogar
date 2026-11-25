@@ -1,3 +1,12 @@
+// Something done ahead so cooking later is quick (wash, cut, soak, marinate, a base, a batch) —
+// never "cook the dish". Used by the Meal Prep section for recipes added to a week.
+export interface PrepTask {
+  level: 1 | 2 | 3;
+  title: string;
+  description: string;
+  minutes: number;
+}
+
 export interface Recipe {
   id: string;
   name: string;
@@ -21,6 +30,9 @@ export interface Recipe {
   // AI-estimated kcal per single portion (at basePortions), via POST /api/estimate-calories.
   // Approximate, not a precise nutritional calculation — shown only in recipe detail views.
   estimatedCalories?: number;
+  // From prep_tasks_nutricion.json (nutrition recipes) or the import flow (imported recipes).
+  // Ebook recipes have none: their prep tasks are AI-generated and cached in mh_prep_tasks_v1.
+  prepTasks?: PrepTask[];
 }
 
 export interface DayMenu {

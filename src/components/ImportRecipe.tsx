@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { Sparkles, Image as ImageIcon, FileText, Upload, Plus, Trash2, Loader2, X, CheckCircle2 } from 'lucide-react';
-import { Recipe } from '../types';
+import { PrepTask, Recipe } from '../types';
 import { addCustomRecipe, makeRecipeId } from '../customRecipesData';
 
 interface ImportRecipeProps {
@@ -27,10 +27,13 @@ interface DraftRecipe {
   note: string;
   basePortions: string;
   estimatedCalories: string;
+  // Meal prep tasks returned by the same /api/import-recipe call — not editable here, just carried
+  // to the saved recipe so Meal Prep doesn't need a separate AI request for it.
+  prepTasks: PrepTask[];
 }
 
 function emptyDraft(): DraftRecipe {
-  return { name: '', category: '', prepTime: '', ingredients: [], steps: [], note: '', basePortions: '2', estimatedCalories: '' };
+  return { name: '', category: '', prepTime: '', ingredients: [], steps: [], note: '', basePortions: '2', estimatedCalories: '', prepTasks: [] };
 }
 
 const amberBorder = 'border-[#E08A3C] focus:border-[#E08A3C] bg-[#E08A3C]/5';
@@ -106,7 +109,8 @@ export default function ImportRecipe({ onSaved }: ImportRecipeProps) {
         steps: Array.isArray(data.steps) ? data.steps.filter((s: any) => typeof s === 'string') : [],
         note: typeof data.nota === 'string' ? data.nota : '',
         basePortions,
-        estimatedCalories: ''
+        estimatedCalories: '',
+        prepTasks: Array.isArray(data.prepTasks) ? data.prepTasks : []
       });
       setHasExtracted(true);
 
@@ -194,7 +198,8 @@ export default function ImportRecipe({ onSaved }: ImportRecipeProps) {
       note: draft.note.trim() || undefined,
       origin: 'importada',
       category: draft.category || undefined,
-      estimatedCalories: draft.estimatedCalories.trim() ? Number(draft.estimatedCalories) || undefined : undefined
+      estimatedCalories: draft.estimatedCalories.trim() ? Number(draft.estimatedCalories) || undefined : undefined,
+      prepTasks: draft.prepTasks.length ? draft.prepTasks : undefined
     };
     addCustomRecipe(recipe);
     setSavedFlash(true);

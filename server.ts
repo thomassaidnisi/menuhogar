@@ -243,6 +243,55 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
+// ---------- Prep tasks (shared by /api/prep-tasks and /api/import-recipe) ----------
+
+const PREP_TASKS_RULES = `Reglas para las tareas de preparación (meal prep):
+- Una tarea de preparación es algo que se ADELANTA antes de cocinar y se puede GUARDAR, para que después cocinar sea rápido: lavar, cortar, remojar, marinar, dejar una base lista, hornear algo que se guarda.
+- NUNCA "cocinar el plato", "preparar la receta" ni "servir". Nada que haya que hacer en el momento de comer.
+- Entre 1 y 4 tareas, solo las que tengan sentido para esta receta.
+- "level": 1 = rápida (≤20 min: lavar, cortar, remojar, marinar); 2 = ~45 min (cocinar una base: legumbres, arroz, una salsa, un puré); 3 = 90+ min (cocinar en tandas y freezar).
+- "minutes": minutos aproximados de esa tarea (entero).
+- "title": corto, en infinitivo (ej. "Remojar los garbanzos").
+- "description": una o dos oraciones en español rioplatense con "vos" (ej. "Dejalos en agua toda la noche y guardalos escurridos en la heladera."), con cómo guardarlo si aplica.
+- No inventes cantidades ni ingredientes que no estén en la receta.`;
+
+const PREP_TASK_ITEM_SCHEMA = {
+  type: 'object',
+  properties: {
+    level: { type: 'integer' },
+    title: { type: 'string' },
+    description: { type: 'string' },
+    minutes: { type: 'integer' }
+  },
+  required: ['level', 'title', 'description', 'minutes']
+};
+
+// Gemini's schema can't enforce ranges, so clamp/filter here: 1-4 tasks, level 1|2|3, no empty text.
+function sanitizePrepTasks(raw: any): { level: 1 | 2 | 3; title: string; description: string; minutes: number }[] {
+  if (!Array.isArray(raw)) return [];
+  return raw
+    .filter((t) => t && typeof t.title === 'string' && t.title.trim() && typeof t.description === 'string')
+    .slice(0, 4)
+    .map((t) => ({
+      level: (Math.min(3, Math.max(1, Math.round(Number(t.level) || 1)))) as 1 | 2 | 3,
+      title: t.title.trim(),
+      description: t.description.trim(),
+      minutes: Math.max(1, Math.round(Number(t.minutes) || 15))
+    }));
+}
+
+const PREP_TASKS_SYSTEM_INSTRUCTION = `Sos un asistente de meal prep para una app de cocina doméstica. Vas a recibir una receta (nombre, ingredientes y pasos) y tenés que devolver las tareas de preparación que se pueden adelantar para esa receta.
+
+${PREP_TASKS_RULES}
+
+Devolvé únicamente el JSON pedido, nada de texto adicional.`;
+
+const PREP_TASKS_RESPONSE_SCHEMA = {
+  type: 'object',
+  properties: { tasks: { type: 'array', items: PREP_TASK_ITEM_SCHEMA } },
+  required: ['tasks']
+};
+
 // ---------- Import Recipe (Gemini extracts structured recipe from screenshot or pasted text) ----------
 
 const IMPORT_RECIPE_SYSTEM_INSTRUCTION = `Sos un extractor de recetas de cocina. Vas a recibir una imagen (captura de pantalla de una receta vista en redes como TikTok o Pinterest) o un texto pegado con una receta copiada de algún lado.
@@ -258,6 +307,8 @@ Tu única tarea es estructurar esa información en formato JSON, siguiendo exact
   - "category": clasificá el ingrediente en una de "Verdulería", "Carnicería", "Lácteos y Huevos", "Almacén" según lo que mejor aplique.
 - "steps": lista de strings, un paso de preparación por elemento, en el orden en que aparecen. No numerar manualmente (ya van en orden por posición en el array).
 - "nota": si el texto incluye sugerencias de acompañamiento, tips de conservación, variantes, o cualquier consejo adicional que no sea parte del procedimiento paso a paso, extraelo acá tal cual (podés resumirlo levemente si es muy largo, pero no lo inventes). Si no hay nada de esto en la fuente, omití el campo directamente (no lo incluyas en el JSON).
+- "prepTasks": las tareas de preparación que se pueden adelantar para esta receta, según estas reglas:
+${PREP_TASKS_RULES}
 - "porcionesBase": la cantidad de personas para la que están calculadas las cantidades de los ingredientes tal como aparecen en la fuente (ej. si dice "Para 2 personas" o "rinde 4 porciones", usá ese número). Si la fuente no lo menciona, usá 2 como valor por default — este campo siempre tiene que tener un número entero, nunca lo dejes vacío ni lo omitas.
 
 Devolvé únicamente el JSON pedido, nada de texto adicional.`;
@@ -290,7 +341,9 @@ const IMPORT_RECIPE_RESPONSE_SCHEMA = {
     nota: { type: 'string' },
     // A diferencia de "nota", este SÍ va en `required` con un default de 2 instruido en el
     // prompt — el selector "¿para cuántas personas cocinás?" necesita siempre un número acá.
-    porcionesBase: { type: 'integer' }
+    porcionesBase: { type: 'integer' },
+    // Opcional: si el modelo no lo manda, el Meal Prep lo genera aparte con /api/prep-tasks.
+    prepTasks: { type: 'array', items: PREP_TASK_ITEM_SCHEMA }
   },
   required: ['name', 'prepTime', 'ingredients', 'steps', 'porcionesBase']
 };
@@ -385,7 +438,7 @@ app.post('/api/import-recipe', async (req, res) => {
       });
     }
 
-    res.json(data);
+    res.json({ ...data, prepTasks: sanitizePrepTasks(data.prepTasks) });
   } catch (error: any) {
     console.error('[/api/import-recipe] Unexpected error:', {
       name: error?.name,
@@ -460,6 +513,42 @@ app.post('/api/estimate-calories', async (req, res) => {
       stack: error?.stack,
     });
     res.status(500).json({ error: 'Hubo un error al estimar las calorías con IA.' });
+  }
+});
+
+// ---------- Prep tasks for a recipe without its own (Meal Prep "Sumar recetas a esta semana") ----------
+
+app.post('/api/prep-tasks', async (req, res) => {
+  try {
+    const { name, ingredients, steps } = req.body;
+    if (!name || !Array.isArray(ingredients) || !Array.isArray(steps)) {
+      return res.status(400).json({ error: 'Faltan el nombre, los ingredientes o los pasos de la receta' });
+    }
+    if (!ai) {
+      return res.status(503).json({ error: 'El servicio de IA no está disponible en este entorno (falta configurar GEMINI_API_KEY).' });
+    }
+
+    const ingredientsList = ingredients
+      .map((ing: any) => (ing.amount === null || ing.amount === undefined ? `- ${ing.name}` : `- ${ing.amount} ${ing.unit ?? ''} de ${ing.name}`))
+      .join('\n');
+    const stepsList = steps.map((s: any, i: number) => `${i + 1}) ${s}`).join('\n');
+    const prompt = `Receta: ${name}\n\nIngredientes:\n${ingredientsList}\n\nPasos:\n${stepsList}\n\nDevolvé las tareas de preparación que se pueden adelantar.`;
+
+    const { data, error } = await generateJsonWithFallback(
+      '/api/prep-tasks',
+      [{ text: prompt }],
+      PREP_TASKS_SYSTEM_INSTRUCTION,
+      PREP_TASKS_RESPONSE_SCHEMA
+    );
+
+    const tasks = sanitizePrepTasks(data?.tasks);
+    if (error || tasks.length === 0) {
+      return res.status(502).json({ error: 'No se pudieron generar las tareas de preparación.' });
+    }
+    res.json({ tasks });
+  } catch (error: any) {
+    console.error('[/api/prep-tasks] Unexpected error:', { name: error?.name, status: error?.status, message: error?.message });
+    res.status(500).json({ error: 'No se pudieron generar las tareas de preparación.' });
   }
 });
 
